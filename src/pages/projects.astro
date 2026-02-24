@@ -6,73 +6,584 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <BaseLayout title="Projects | Robert Otieno" description="Selected architecture and IAM projects by Robert Otieno.">
-	<section class="hero" style="margin-top: 0;">
-		<div>
-		<p class="eyebrow">Selected Work</p>
-		<h1>Enterprise Security and Identity Systems</h1>
-		<p class="lead">A focused set of projects demonstrating architecture depth, governance rigor, and operational scalability.</p>
-		<div class="cta-row">
-			<a class="cta" href={`${basePath}portfolio/`}>Open Full Portfolio</a>
-			<a class="cta" href={`${basePath}about/`}>About Approach</a>
-		</div>
-		</div>
-		<div class="hero-art" aria-hidden="true">
-			<svg viewBox="0 0 420 280" width="100%">
-				<rect x="40" y="36" width="340" height="54" rx="8" fill="#ffffff" stroke="#cbd5e1" />
-				<rect x="40" y="110" width="160" height="120" rx="8" fill="#ffffff" stroke="#cbd5e1" />
-				<rect x="220" y="110" width="160" height="120" rx="8" fill="#f8faff" stroke="#1e3a8a" />
-				<text x="58" y="68" fill="#1f2937" font-size="13">Case Studies · Decisions · Trade-offs · Outcomes</text>
-				<text x="58" y="145" fill="#1f2937" font-size="12">Problem</text>
-				<text x="58" y="170" fill="#1f2937" font-size="12">Architecture</text>
-				<text x="58" y="195" fill="#1f2937" font-size="12">Security</text>
-				<text x="238" y="145" fill="#1e3a8a" font-size="12">Governance</text>
-				<text x="238" y="170" fill="#1e3a8a" font-size="12">Automation</text>
-				<text x="238" y="195" fill="#1e3a8a" font-size="12">Impact</text>
-			</svg>
+	<section class="hero-section">
+		<div class="hero-content">
+			<p class="eyebrow">Portfolio & Development</p>
+			<h1>Enterprise Security, Identity Systems & Software Development</h1>
+			<p class="lead">A comprehensive collection of projects spanning enterprise identity architecture, decentralized systems, and full-stack development — demonstrating technical depth, governance rigor, and operational scalability.</p>
+			<div class="cta-row">
+				<a class="cta-primary" href="https://github.com/Robertoukootieno" target="_blank" rel="noopener">View GitHub Profile</a>
+				<a class="cta-secondary" href={`${basePath}portfolio/`}>Full Portfolio</a>
+			</div>
 		</div>
 	</section>
 
-	<section>
-		<article class="card">
-			<h2>Decentralized Employment Verification System</h2>
-			<p>Architected a trust-based employment verification system using Verifiable Credentials and decentralized identity infrastructure.</p>
-			<h3>Problem</h3>
-			<p>Traditional verification workflows were slow, high-friction, and difficult to audit across organizational boundaries.</p>
-			<h3>Architectural Decisions</h3>
-			<ul>
-				<li>Verifiable credential lifecycle model for issuance and revocation</li>
-				<li>Selective disclosure patterns for data minimization</li>
-				<li>Modular service boundaries for policy and trust control</li>
-			</ul>
-			<h3>Security Considerations and Trade-offs</h3>
-			<ul>
-				<li>Balanced decentralization benefits with governance requirements</li>
-				<li>Designed for auditability without overexposure of identity data</li>
-				<li>Prioritized integration pathways for enterprise environments</li>
-			</ul>
-			<p><strong>Outcome:</strong> A privacy-centric verification model that supports enterprise integration without sacrificing trust controls.</p>
-		</article>
+	<section class="featured-section">
+		<h2>Featured Enterprise Projects</h2>
+		<p class="section-intro">Architecture-driven solutions for enterprise identity, security, and governance challenges.</p>
+		
+		<div class="featured-grid">
+			<article class="featured-card">
+				<div class="card-header">
+					<h3>Decentralized Employment Verification System</h3>
+					<span class="project-badge featured">Featured</span>
+				</div>
+				<p class="project-description">Architected a trust-based employment verification system using Verifiable Credentials and decentralized identity infrastructure for my Master's thesis at Aalborg University.</p>
+				
+				<div class="project-details">
+					<h4>Problem Statement</h4>
+					<p>Traditional verification workflows were slow, high-friction, and difficult to audit across organizational boundaries.</p>
+					
+					<h4>Architectural Decisions</h4>
+					<ul>
+						<li>Verifiable credential lifecycle model for issuance and revocation</li>
+						<li>Selective disclosure patterns for data minimization</li>
+						<li>Modular service boundaries for policy and trust control</li>
+					</ul>
+					
+					<h4>Security Considerations</h4>
+					<ul>
+						<li>Balanced decentralization benefits with governance requirements</li>
+						<li>Designed for auditability without overexposure of identity data</li>
+						<li>Prioritized integration pathways for enterprise environments</li>
+					</ul>
+					
+					<div class="project-outcome">
+						<strong>Outcome:</strong> A privacy-centric verification model that supports enterprise integration without sacrificing trust controls.
+					</div>
+				</div>
+				
+				<div class="card-footer">
+					<div class="tech-stack">
+						<span class="tech-tag">Java</span>
+						<span class="tech-tag">Verifiable Credentials</span>
+						<span class="tech-tag">SSI</span>
+						<span class="tech-tag">Blockchain</span>
+					</div>
+					<a href="https://github.com/Robertoukootieno/EmploymentVC" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+				</div>
+			</article>
+
+			<article class="featured-card">
+				<div class="card-header">
+					<h3>Enterprise IAM & Access Governance Optimization</h3>
+					<span class="project-badge enterprise">Enterprise</span>
+				</div>
+				<p class="project-description">Improved identity lifecycle governance and operational access controls in enterprise IT environments.</p>
+				
+				<div class="project-details">
+					<h4>Problem Statement</h4>
+					<p>Manual provisioning and inconsistent review cycles introduced risk and operational delay.</p>
+					
+					<h4>Architectural Decisions</h4>
+					<ul>
+						<li>Role and access lifecycle standardization</li>
+						<li>Operational integration between IAM and IT service controls</li>
+						<li>Automation-first approach for recurring governance workflows</li>
+					</ul>
+					
+					<h4>Impact Areas</h4>
+					<ul>
+						<li>Reduced manual access provisioning effort</li>
+						<li>Strengthened access review reliability</li>
+						<li>Improved audit readiness and governance consistency</li>
+					</ul>
+					
+					<div class="project-outcome">
+						<strong>Outcome:</strong> A more resilient and operationally sustainable IAM governance model.
+					</div>
+				</div>
+				
+				<div class="card-footer">
+					<div class="tech-stack">
+						<span class="tech-tag">IAM</span>
+						<span class="tech-tag">IGA</span>
+						<span class="tech-tag">Automation</span>
+						<span class="tech-tag">Governance</span>
+					</div>
+				</div>
+			</article>
+		</div>
 	</section>
 
-	<section>
-		<article class="card">
-			<h2>Enterprise IAM & Access Governance Optimization</h2>
-			<p>Improved identity lifecycle governance and operational access controls in enterprise IT environments.</p>
-			<h3>Problem</h3>
-			<p>Manual provisioning and inconsistent review cycles introduced risk and operational delay.</p>
-			<h3>Architectural Decisions</h3>
-			<ul>
-				<li>Role and access lifecycle standardization</li>
-				<li>Operational integration between IAM and IT service controls</li>
-				<li>Automation-first approach for recurring governance workflows</li>
-			</ul>
-			<h3>Impact Areas</h3>
-			<ul>
-				<li>Reduced manual access provisioning effort</li>
-				<li>Strengthened access review reliability</li>
-				<li>Improved audit readiness and governance consistency</li>
-			</ul>
-			<p><strong>Outcome:</strong> A more resilient and operationally sustainable IAM governance model.</p>
-		</article>
+	<section class="github-section">
+		<h2>GitHub Projects & Developments</h2>
+		<p class="section-intro">Full-stack applications, web platforms, and innovative solutions across various domains.</p>
+		
+		<div class="github-grid">
+			<article class="github-card">
+				<div class="card-icon">🏨</div>
+				<h3>StayOS</h3>
+				<p>Comprehensive hospitality management system designed for hotel operations, guest services, and property management.</p>
+				<div class="card-meta">
+					<span class="language php">PHP</span>
+					<span class="license">MIT License</span>
+				</div>
+				<a href="https://github.com/Robertoukootieno/StayOS" class="github-link" target="_blank" rel="noopener">View Repository →</a>
+			</article>
+
+			<article class="github-card">
+				<div class="card-icon">🌍</div>
+				<h3>BODON Website</h3>
+				<p>Modern tourist company website built with TypeScript, showcasing travel destinations, booking systems, and customer engagement features.</p>
+				<div class="card-meta">
+					<span class="language typescript">TypeScript</span>
+				</div>
+				<a href="https://github.com/Robertoukootieno/BODON-website" class="github-link" target="_blank" rel="noopener">View Repository →</a>
+			</article>
+
+			<article class="github-card">
+				<div class="card-icon">🌾</div>
+				<h3>KaziApp</h3>
+				<p>Mobile application connecting farmers and veterinarians in Africa, facilitating agricultural support, consultations, and resource sharing.</p>
+				<div class="card-meta">
+					<span class="language dart">Dart</span>
+					<span class="stars">⭐ 1</span>
+					<span class="license">MIT License</span>
+				</div>
+				<a href="https://github.com/Robertoukootieno/KaziApp" class="github-link" target="_blank" rel="noopener">View Repository →</a>
+			</article>
+
+			<article class="github-card">
+				<div class="card-icon">💼</div>
+				<h3>Portfolio Website</h3>
+				<p>This website — built with Astro for optimal performance, showcasing enterprise identity architecture work and professional experience.</p>
+				<div class="card-meta">
+					<span class="language astro">Astro</span>
+				</div>
+				<a href="https://github.com/Robertoukootieno/robertotieno.github.io" class="github-link" target="_blank" rel="noopener">View Repository →</a>
+			</article>
+		</div>
 	</section>
 </BaseLayout>
+
+<style>
+	.hero-section {
+		background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+		border-radius: 12px;
+		padding: clamp(2.5rem, 6vw, 4rem) clamp(1.5rem, 4vw, 2.5rem);
+		margin-bottom: 3rem;
+		color: #ffffff;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 400px;
+		height: 400px;
+		background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+		border-radius: 50%;
+		transform: translate(30%, -30%);
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 1;
+		max-width: 900px;
+	}
+
+	.eyebrow {
+		display: inline-block;
+		background: rgba(255, 255, 255, 0.2);
+		color: #ffffff;
+		padding: 0.4rem 1rem;
+		border-radius: 20px;
+		font-size: 0.8rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 1rem;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.hero-section h1 {
+		font-size: clamp(1.8rem, 5vw, 2.5rem);
+		color: #ffffff;
+		margin: 0 0 1rem 0;
+		font-weight: 800;
+		line-height: 1.2;
+	}
+
+	.lead {
+		font-size: 1.05rem;
+		color: rgba(255, 255, 255, 0.95);
+		line-height: 1.8;
+		margin: 0 0 1.5rem 0;
+	}
+
+	.cta-row {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.cta-primary, .cta-secondary {
+		display: inline-block;
+		padding: 0.8rem 1.6rem;
+		border-radius: 8px;
+		font-weight: 600;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		font-size: 0.95rem;
+	}
+
+	.cta-primary {
+		background: #ffffff;
+		color: #1e3a8a;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	}
+
+	.cta-primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+	}
+
+	.cta-secondary {
+		background: transparent;
+		color: #ffffff;
+		border: 2px solid rgba(255, 255, 255, 0.5);
+	}
+
+	.cta-secondary:hover {
+		background: rgba(255, 255, 255, 0.1);
+		border-color: #ffffff;
+	}
+
+	.featured-section, .github-section {
+		margin-bottom: 3rem;
+	}
+
+	.featured-section h2, .github-section h2 {
+		font-size: 1.8rem;
+		color: #0f172a;
+		margin: 0 0 0.8rem 0;
+		font-weight: 700;
+		border-bottom: 3px solid #1e3a8a;
+		padding-bottom: 0.5rem;
+	}
+
+	.section-intro {
+		font-size: 1rem;
+		color: #475569;
+		margin: 0 0 2rem 0;
+		line-height: 1.7;
+	}
+
+	.featured-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.featured-card {
+		background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+		border: 2px solid #e0e7ff;
+		border-radius: 12px;
+		padding: 2rem;
+		transition: all 0.3s ease;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.featured-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 5px;
+		height: 100%;
+		background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
+		transform: scaleY(0);
+		transform-origin: bottom;
+		transition: transform 0.3s ease;
+	}
+
+	.featured-card:hover::before {
+		transform: scaleY(1);
+		transform-origin: top;
+	}
+
+	.featured-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 12px 35px rgba(30, 58, 138, 0.15);
+		border-color: #1e3a8a;
+	}
+
+	.card-header {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		gap: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	.card-header h3 {
+		font-size: 1.4rem;
+		color: #0f172a;
+		margin: 0;
+		font-weight: 700;
+		flex: 1;
+	}
+
+	.project-badge {
+		display: inline-block;
+		padding: 0.3rem 0.8rem;
+		border-radius: 20px;
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		white-space: nowrap;
+	}
+
+	.project-badge.featured {
+		background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+		color: #ffffff;
+	}
+
+	.project-badge.enterprise {
+		background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+		color: #ffffff;
+	}
+
+	.project-description {
+		font-size: 1rem;
+		color: #334155;
+		line-height: 1.7;
+		margin: 0 0 1.5rem 0;
+	}
+
+	.project-details h4 {
+		font-size: 0.95rem;
+		color: #1e3a8a;
+		margin: 1.5rem 0 0.8rem 0;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	.project-details p {
+		font-size: 0.9rem;
+		color: #475569;
+		line-height: 1.6;
+		margin: 0 0 1rem 0;
+	}
+
+	.project-details ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 1rem 0;
+	}
+
+	.project-details ul li {
+		font-size: 0.9rem;
+		color: #334155;
+		padding-left: 1.5rem;
+		margin-bottom: 0.6rem;
+		position: relative;
+		line-height: 1.6;
+	}
+
+	.project-details ul li::before {
+		content: "▸";
+		position: absolute;
+		left: 0;
+		color: #1e3a8a;
+		font-weight: bold;
+	}
+
+	.project-outcome {
+		background: #f0f9ff;
+		border-left: 4px solid #1e3a8a;
+		padding: 1rem 1.2rem;
+		margin-top: 1.5rem;
+		border-radius: 4px;
+		font-size: 0.95rem;
+		color: #0f172a;
+		line-height: 1.6;
+	}
+
+	.card-footer {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e0e7ff;
+		flex-wrap: wrap;
+	}
+
+	.tech-stack {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+	}
+
+	.tech-tag {
+		display: inline-block;
+		background: #e0e7ff;
+		color: #1e3a8a;
+		padding: 0.3rem 0.8rem;
+		border-radius: 20px;
+		font-size: 0.75rem;
+		font-weight: 600;
+	}
+
+	.project-link {
+		color: #1e3a8a;
+		font-weight: 600;
+		text-decoration: none;
+		font-size: 0.9rem;
+		transition: all 0.3s ease;
+		white-space: nowrap;
+	}
+
+	.project-link:hover {
+		color: #3b82f6;
+		transform: translateX(4px);
+	}
+
+	.github-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		gap: 1.5rem;
+	}
+
+	.github-card {
+		background: #ffffff;
+		border: 2px solid #e5e7eb;
+		border-radius: 10px;
+		padding: 1.8rem;
+		transition: all 0.3s ease;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.github-card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 12px 30px rgba(30, 58, 138, 0.12);
+		border-color: #1e3a8a;
+	}
+
+	.card-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.github-card h3 {
+		font-size: 1.15rem;
+		color: #0f172a;
+		margin: 0 0 0.8rem 0;
+		font-weight: 700;
+	}
+
+	.github-card p {
+		font-size: 0.9rem;
+		color: #475569;
+		line-height: 1.6;
+		margin: 0 0 1.2rem 0;
+		flex: 1;
+	}
+
+	.card-meta {
+		display: flex;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+		margin-bottom: 1rem;
+	}
+
+	.language, .license, .stars {
+		display: inline-block;
+		padding: 0.25rem 0.7rem;
+		border-radius: 15px;
+		font-size: 0.7rem;
+		font-weight: 600;
+	}
+
+	.language {
+		color: #ffffff;
+	}
+
+	.language.java {
+		background: #b07219;
+	}
+
+	.language.php {
+		background: #4F5D95;
+	}
+
+	.language.typescript {
+		background: #3178c6;
+	}
+
+	.language.dart {
+		background: #0175C2;
+	}
+
+	.language.astro {
+		background: #ff5a1f;
+	}
+
+	.license {
+		background: #f3f4f6;
+		color: #6b7280;
+	}
+
+	.stars {
+		background: #fef3c7;
+		color: #92400e;
+	}
+
+	.github-link {
+		color: #1e3a8a;
+		font-weight: 600;
+		text-decoration: none;
+		font-size: 0.9rem;
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.github-link:hover {
+		color: #3b82f6;
+		transform: translateX(4px);
+	}
+
+	@media (max-width: 900px) {
+		.github-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.card-footer {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+
+		.cta-row {
+			flex-direction: column;
+		}
+
+		.cta-primary, .cta-secondary {
+			width: 100%;
+			text-align: center;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.hero-section {
+			padding: 2rem 1.5rem;
+		}
+
+		.card-header {
+			flex-direction: column;
+		}
+
+		.project-badge {
+			align-self: flex-start;
+		}
+	}
+</style>
