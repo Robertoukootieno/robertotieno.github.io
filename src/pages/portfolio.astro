@@ -5,17 +5,16 @@ const baseUrl = import.meta.env.BASE_URL;
 const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
-<BaseLayout title="Portfolio | Robert Otieno" description="Enterprise Identity, Security & IT Operations portfolio by Robert Otieno.">
+<BaseLayout title="Portfolio | Robert Otieno | Enterprise Identity & Security Architect" description="Enterprise-scale identity, security & IT operations portfolio. Zero Trust architecture, privacy-engineered systems, automation-driven governance.">
 	<section class="hero" style="margin-top: 0;">
 		<div>
-		<p class="eyebrow">Enterprise Identity, Security & IT Operations</p>
+		<p class="eyebrow">Enterprise Identity, Security & IT Operations Architect</p>
 		<h1>Robert Otieno</h1>
-		<p class="lead">Enterprise Identity, Security & IT Operations Architect</p>
-		<p class="lead">Designing privacy-engineered, automation-driven trust infrastructure for modern enterprises.</p>
-		<p>Specializing in Identity & Access Management, Zero Trust architecture, enterprise IT operations, and decentralized identity systems.</p>
+		<p class="lead">Zero Trust Identity, Privacy-Engineered Systems, Automation-Driven Enterprise Security</p>
+		<p>I architect enterprise identity and security systems built on zero-trust principles, privacy-by-design, and intelligent automation. My approach blends deep IAM/governance expertise with modern cloud infrastructure and emerging digital identity standards.</p>
 		<div class="cta-row">
-			<a class="cta" href={`${basePath}projects/`}>Selected Projects</a>
-			<a class="cta" href={`${basePath}about/`}>About Approach</a>
+			<a class="cta" href={`${basePath}projects/`}>Case Studies</a>
+			<a class="cta" href={`${basePath}about/`}>Approach & Strategy</a>
 		</div>
 		</div>
 		<div class="hero-art" aria-hidden="true">
@@ -34,114 +33,123 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 	</section>
 
 	<section>
-		<h2>How I Think About Enterprise Security</h2>
-		<p>Enterprise security is not a collection of tools. It is a system.</p>
+		<h2>Identity as Enterprise Infrastructure</h2>
+		<p>Enterprise security is fundamentally a problem of trust architecture. Identity is the control plane. Operations is the execution layer. Privacy is an architectural constraint—not an afterthought. Automation is the scaling mechanism.</p>
 		<p>
-			Identity is the control plane. Operations is the execution layer. Privacy is an architectural constraint — not an afterthought.
-			Automation is the scaling mechanism.
+			I design systems where identity, governance, and operational security work as a unified trust infrastructure. My focus is not only enforcing access decisions, but engineering environments where those decisions are measurable, auditable, and resilient at enterprise scale.
 		</p>
-		<p>
-			I design systems where identity, governance, and operational security work as a unified trust infrastructure. My focus is not only
-			enforcing access, but engineering environments where access decisions are measurable, auditable, and resilient.
-		</p>
+		<p>The goal: security that scales with organizational complexity, not against it.</p>
 	</section>
 
 	<section>
-		<h2>Core Expertise</h2>
+		<h2>Core Expertise & Technical Pillars</h2>
 		<div class="grid">
 			<article class="card">
-				<h3>Identity & Access Architecture</h3>
+				<h3>Identity & Access Management (IAM/IGA/PAM)</h3>
 				<ul>
-					<li>Enterprise IAM design and optimization</li>
-					<li>Entra ID implementation and governance</li>
-					<li>Zero Trust architecture principles</li>
-					<li>Authentication and authorization system design</li>
-					<li>Access lifecycle and role governance</li>
+					<li>JML and RBAC design for enterprise workflows</li>
+					<li>SaaS integration: Azure AD / Entra ID, SailPoint</li>
+					<li>JWT and OpenID Connect architecture patterns</li>
+					<li>Privileged access controls and governance models</li>
+					<li>Identity lifecycle automation and access reviews</li>
 				</ul>
 			</article>
 			<article class="card">
-				<h3>Enterprise IT Operations</h3>
+				<h3>Security & Privacy Engineering</h3>
 				<ul>
-					<li>Operational security integration</li>
-					<li>Endpoint and device governance alignment</li>
-					<li>Identity-aware infrastructure controls</li>
-					<li>Change and incident management alignment</li>
-					<li>Automation-driven operational workflows</li>
+					<li>Zero Trust architecture principles and implementation</li>
+					<li>Threat modeling and risk-informed control selection</li>
+					<li>Privacy by Design and GDPR-aligned architecture</li>
+					<li>Data lifecycle control and minimization strategy</li>
+					<li>Enterprise security compliance frameworks</li>
 				</ul>
 			</article>
 			<article class="card">
-				<h3>Digital Identity & Privacy Engineering</h3>
+				<h3>Distributed Ledger & Decentralized Identity</h3>
 				<ul>
 					<li>Self-Sovereign Identity (SSI) architectures</li>
-					<li>Verifiable Credentials (W3C data model)</li>
-					<li>Privacy-by-design system modeling</li>
-					<li>Trust frameworks and decentralized identity infrastructure</li>
-					<li>Compliance-aware identity system design</li>
+					<li>Verifiable Credentials (VC DM 1.1/2.0) integration</li>
+					<li>EBSI and Hyperledger Besu context</li>
+					<li>Credential issuance, verification, disclosure flows</li>
+					<li>Trust frameworks for enterprise digital identity</li>
 				</ul>
 			</article>
 		</div>
 	</section>
 
 	<section>
-		<h2>Selected Work</h2>
+		<h2>Selected Case Studies</h2>
 		<article class="card">
 			<h3>Decentralized Employment Verification System</h3>
-			<p>Designed a privacy-centric employment verification platform leveraging Verifiable Credentials and decentralized trust infrastructure.</p>
+			<p><strong>Challenge:</strong> Build a privacy-preserving SSI employment verification model for multi-party enterprise workflows.</p>
 			<ul>
-				<li>Trust framework modeling</li>
-				<li>Credential lifecycle architecture</li>
-				<li>Selective disclosure mechanisms</li>
-				<li>Governance and compliance alignment</li>
-				<li>Microservice-based identity architecture</li>
+				<li>SSI platform integration with EBSI and walt.id</li>
+				<li>Credential lifecycle: issuance, selective disclosure, verification</li>
+				<li>Microservice boundaries for issuer, holder, and verifier domains</li>
+				<li>Governance model for compliance and operational scalability</li>
 			</ul>
-			<p>This project explores how decentralized identity can integrate into enterprise-grade environments while maintaining auditability and operational scalability.</p>
+			<p><strong>Outcome:</strong> Privacy-engineered identity infrastructure enabling trust without centralized control.</p>
 		</article>
 		<article class="card" style="margin-top: 1rem;">
-			<h3>Enterprise IAM & Access Governance Optimization</h3>
-			<p>Led architectural improvements across identity lifecycle management and operational access governance.</p>
+			<h3>Corporate IAM Modernization</h3>
+			<p><strong>Challenge:</strong> Redesign IAM lifecycle patterns for better access governance and reduced provisioning friction.</p>
 			<ul>
-				<li>Reduced manual access provisioning workflows</li>
-				<li>Strengthened access review processes</li>
-				<li>Integrated identity governance into operational controls</li>
-				<li>Improved alignment between IAM and IT operations</li>
+				<li>RBAC model rationalization and JML alignment</li>
+				<li>Automation of access provisioning workflows</li>
+				<li>Integration strategy across enterprise SaaS applications</li>
+				<li>Improved audit traceability and governance consistency</li>
 			</ul>
-			<p>The objective was not just compliance — but sustainable, automation-driven governance.</p>
+			<p><strong>Outcome:</strong> Sustainable, automation-driven governance reducing operational friction while strengthening compliance.</p>
+		</article>
+		<article class="card" style="margin-top: 1rem;">
+			<h3>Privacy Engineering & Zero Trust Integration</h3>
+			<p><strong>Challenge:</strong> Introduce privacy-by-design controls in enterprise identity and data handling workflows.</p>
+			<ul>
+				<li>DPIA-supported privacy risk assessments</li>
+				<li>Data minimization and retention control patterns</li>
+				<li>ZKP and differential privacy feasibility analysis</li>
+				<li>Risk-informed alignment with governance controls</li>
+			</ul>
+			<p><strong>Outcome:</strong> Privacy-engineered identity systems aligned with Zero Trust principles and compliance requirements.</p>
 		</article>
 	</section>
 
 	<section>
-		<h2>Thought Leadership</h2>
-		<p>I write and research at the intersection of identity, operations, and trust infrastructure.</p>
+		<h2>Research & Thought Leadership</h2>
+		<p>I write and think at the intersection of identity architecture, enterprise security, and trust infrastructure:</p>
 		<ul>
-			<li>Why Zero Trust Fails Without Operational Integration</li>
-			<li>Identity as Enterprise Infrastructure</li>
-			<li>Privacy Engineering in IAM Systems</li>
-			<li>The Practical Limits of Decentralized Identity in Enterprises</li>
+			<li>Zero Trust as enterprise infrastructure control plane</li>
+			<li>Identity governance beyond compliance: automation and resilience</li>
+			<li>Privacy engineering in IAM systems: practical implementation</li>
+			<li>Decentralized identity in enterprise context: integration patterns</li>
+			<li>Automation-driven security: reducing friction without compromising control</li>
 		</ul>
-		<p>Strong security begins with architectural clarity — not product selection.</p>
+		<p>Strong security begins with architectural clarity—not product selection.</p>
 	</section>
 
 	<section>
-		<h2>Current Focus</h2>
+		<h2>Current Focus & Capabilities</h2>
 		<ul>
-			<li>Enterprise IAM architecture</li>
-			<li>Access governance transformation</li>
-			<li>Zero Trust implementation strategy</li>
-			<li>Identity automation initiatives</li>
-			<li>Digital identity and decentralized trust systems</li>
+			<li>Enterprise IAM architecture design and implementation</li>
+			<li>Zero Trust strategy and deployment</li>
+			<li>Access governance transformation and automation</li>
+			<li>Privacy-by-design identity systems</li>
+			<li>Digital identity and decentralized trust frameworks</li>
+			<li>Identity-aware cloud infrastructure</li>
+			<li>Automation strategies for governance and compliance</li>
 		</ul>
 	</section>
 
 	<section>
-		<h2>Writing</h2>
-		<p>Essays and technical notes are published under the writings section as this portfolio evolves.</p>
-		<p><a href={`${basePath}projects/`}>See project architecture details</a> and <a href={`${basePath}about/`}>read more about my systems approach</a>.</p>
+		<h2>Writing & Research</h2>
+		<p>I publish essays and technical explorations on identity architecture, zero trust, and enterprise security at the intersection of operational excellence and privacy engineering. Writing appears under the <a href={`${basePath}projects/`}>projects</a> section.</p>
 	</section>
 
 	<section>
-		<h2>Contact</h2>
-		<p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">Your LinkedIn URL</a></p>
-		<p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">Your GitHub URL</a></p>
-		<p>Email: <a href="mailto:your.email@example.com">Your Professional Email</a></p>
+		<h2>Let's Connect</h2>
+		<p>Open to collaborations, advisory roles, and innovative projects in enterprise identity, cybersecurity, and zero trust architecture.</p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">your-linkedin-profile</a></p>
+		<p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">your-github-username</a></p>
+		<p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
 	</section>
 </BaseLayout>
