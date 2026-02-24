@@ -73,6 +73,18 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 					<li>Trust frameworks for enterprise digital identity</li>
 				</ul>
 			</article>
+			<article class="expertise-card">
+				<div class="card-header">
+					<h3>Enterprise IT & Hybrid Collaboration Support</h3>
+					<span class="accent-bar"></span>
+				</div>
+				<ul>
+					<li>Identity & Device Governance: Azure Entra ID, AD, Autopilot, Jamf MDM, Device Attestation</li>
+					<li>Collaboration Platforms: Microsoft 365, Google Workspace, Teams, hybrid meeting room AV</li>
+					<li>Operations: Incident SLA maintenance, service reliability monitoring, lifecycle automation</li>
+					<li>Cross-platform lifecycle standardization and governance-aligned operational excellence</li>
+				</ul>
+			</article>
 		</div>
 	</section>
 
@@ -392,8 +404,14 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 
 	.pillars-grid {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		grid-template-columns: repeat(4, minmax(0, 1fr));
 		gap: 1.5rem;
+	}
+
+	@media (max-width: 1200px) {
+		.pillars-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
 	}
 
 	.expertise-card {
