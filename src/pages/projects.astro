@@ -219,6 +219,7 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 		display: flex;
 		gap: 1rem;
 		flex-wrap: wrap;
+		align-items: center;
 	}
 
 	.cta-primary, .cta-secondary {
@@ -229,6 +230,11 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 		text-decoration: none;
 		transition: all 0.3s ease;
 		font-size: 0.95rem;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		max-width: 100%;
+		box-sizing: border-box;
 	}
 
 	.cta-primary {
@@ -565,11 +571,13 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 
 		.cta-row {
 			flex-direction: column;
+			width: 100%;
 		}
 
 		.cta-primary, .cta-secondary {
 			width: 100%;
 			text-align: center;
+			max-width: 100%;
 		}
 	}
 
