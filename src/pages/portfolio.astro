@@ -6,20 +6,6 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <BaseLayout title="Portfolio | Robert Otieno | Enterprise Identity & Security Architect" description="Enterprise-scale identity, security & IT operations portfolio. Zero Trust architecture, privacy-engineered systems, automation-driven governance.">
-	<section class="hero-section">
-		<div class="hero-grid-bg" aria-hidden="true"></div>
-		<div class="hero-content">
-			<p class="eyebrow">Enterprise Identity, Security & IT Operations Architect</p>
-			<h1>Robert Otieno</h1>
-			<p class="lead">Zero Trust Identity, Privacy-Engineered Systems, Automation-Driven Enterprise Security</p>
-			<p class="hero-para">I architect enterprise identity and security systems built on zero-trust principles, privacy-by-design, and intelligent automation. My approach blends deep IAM/governance expertise with modern cloud infrastructure and emerging digital identity standards.</p>
-			<div class="cta-row">
-				<a class="cta-primary" href={`${basePath}projects/`}>Explore Projects</a>
-				<a class="cta-secondary" href={`${basePath}about/`}>Learn My Approach</a>
-			</div>
-		</div>
-	</section>
-
 	<section class="philosophy-section">
 		<div class="philosophy-content">
 			<h2>Identity as Enterprise Infrastructure</h2>
@@ -28,6 +14,7 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 				I design systems where identity, governance, and operational security work as a unified trust infrastructure. My focus is not only enforcing access decisions, but engineering environments where those decisions are measurable, auditable, and resilient at enterprise scale.
 			</p>
 			<p class="strong-text">The goal: security that scales with organizational complexity, not against it.</p>
+			<p><a href={`${basePath}about/`} style="color: #1e3a8a; font-weight: 600; text-decoration: none;">→ Learn My Approach</a></p>
 		</div>
 	</section>
 
@@ -267,125 +254,25 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 </BaseLayout>
 
 <style>
-	.hero-section {
-		position: relative;
-		overflow: hidden;
-		margin: 0 calc(-1 * clamp(1rem, 3vw, 2rem));
-		padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 3vw, 2rem);
-		background: linear-gradient(135deg, #1e3a8a 0%, #2d5a9e 50%, #1e5c99 100%);
-		color: #ffffff;
-	}
-
-	.hero-grid-bg {
-		position: absolute;
-		inset: 0;
-		background-image:
-			linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
-			linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-		background-size: 40px 40px;
-		animation: drift 20s linear infinite;
-		pointer-events: none;
-	}
-
-	@keyframes drift {
-		from { transform: translateY(0); }
-		to { transform: translateY(34px); }
-	}
-
-	.hero-content {
-		position: relative;
-		z-index: 2;
-		max-width: 720px;
-	}
-
-	.hero-content .eyebrow {
-		color: rgba(255, 255, 255, 0.8);
-		font-size: 0.9rem;
-		font-weight: 500;
-		letter-spacing: 0.05em;
-	}
-
-	.hero-content h1 {
-		color: #ffffff;
-		font-size: clamp(2rem, 8vw, 3.5rem);
-		margin: 0.5rem 0 1rem 0;
-		line-height: 1.1;
-		font-weight: 800;
-	}
-
-	.hero-content .lead {
-		color: rgba(255, 255, 255, 0.95);
-		font-size: clamp(1rem, 2.2vw, 1.25rem);
-		font-weight: 600;
-		margin-bottom: 1rem;
-	}
-
-	.hero-para {
-		color: rgba(255, 255, 255, 0.9);
-		font-size: 0.95rem;
-		line-height: 1.6;
-		margin-bottom: 1.5rem;
-	}
-
-	.cta-row {
-		display: flex;
-		gap: 0.8rem;
-		flex-wrap: wrap;
-	}
-
-	.cta-primary, .cta-secondary {
-		padding: 0.75rem 1.5rem;
-		border-radius: 8px;
-		border: none;
-		font-weight: 600;
-		font-size: 0.95rem;
-		cursor: pointer;
-		transition: all 0.3s ease;
-		text-decoration: none;
-		display: inline-block;
-	}
-
-	.cta-primary {
-		background: #ffffff;
-		color: #1e3a8a;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-	}
-
-	.cta-primary:hover {
-		background: #f0f4ff;
-		transform: translateY(-2px);
-		box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-	}
-
-	.cta-secondary {
-		background: rgba(255, 255, 255, 0.15);
-		color: #ffffff;
-		border: 1.5px solid rgba(255, 255, 255, 0.4);
-	}
-
-	.cta-secondary:hover {
-		background: rgba(255, 255, 255, 0.25);
-		border-color: rgba(255, 255, 255, 0.6);
-		transform: translateY(-2px);
-	}
-
 	.philosophy-section {
-		margin: 3rem 0;
-		padding: 2rem;
-		background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
-		border: 1px solid #dbe4ff;
-		border-radius: 16px;
+		margin: 0;
+		padding: clamp(2rem, 5vw, 3.5rem) clamp(1rem, 3vw, 2rem);
+		background: transparent;
+		border: none;
+		border-radius: 0;
 	}
 
 	.philosophy-content h2 {
 		color: #1e3a8a;
 		margin-bottom: 1rem;
+		font-size: clamp(1.5rem, 4vw, 2rem);
 	}
 
 	.philosophy-content p {
 		color: #334155;
 		line-height: 1.7;
 		margin-bottom: 1rem;
+		font-size: 1rem;
 	}
 
 	.philosophy-content strong {
@@ -396,6 +283,16 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 	.strong-text {
 		font-weight: 600;
 		color: #1e3a8a;
+	}
+
+	.philosophy-content a {
+		display: inline-block;
+		margin-top: 1rem;
+		transition: all 0.2s ease;
+	}
+
+	.philosophy-content a:hover {
+		text-decoration: underline;
 	}
 
 	.expertise-section h2 {
