@@ -38,8 +38,6 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 				<div class="profile-education">
 					<h2>Education & Background</h2>
 					
-					<h3 style="font-size: 1.1rem; color: #1e3a8a; margin-bottom: 1rem;">Education</h3>
-					
 					<div class="education-item">
 						<h3>MSc Engineering in Innovative Communication Technologies & Entrepreneurship</h3>
 						<p class="education-meta">Aalborg University Copenhagen · Denmark</p>
@@ -52,32 +50,6 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 						<p>Based in Nairobi, Kenya. Foundation in software development, systems architecture, and IT infrastructure.</p>
 					</div>
 					
-					<h3 style="font-size: 1.1rem; color: #1e3a8a; margin: 1.8rem 0 1rem 0;">Career Journey</h3>
-					
-					<div class="education-item">
-						<h3>IT Support Specialist</h3>
-						<p class="education-meta">Pandora A/S · Copenhagen, Denmark</p>
-						<p>Enterprise IT operations, system governance, and operational security support for global infrastructure.</p>
-					</div>
-					
-					<div class="education-item">
-						<h3>Internet of Things Research Assistant</h3>
-						<p class="education-meta">Aalborg University · Denmark</p>
-						<p>Research in IoT systems, connected infrastructure, and emerging technology applications.</p>
-					</div>
-					
-					<div class="education-item">
-						<h3>Information Technology Specialist</h3>
-						<p class="education-meta">Secope Solutions LTD · Kisumu, Kenya</p>
-						<p>IT consulting, system integration, and technology solutions for regional enterprises.</p>
-					</div>
-					
-					<div class="education-item">
-						<h3>IT Operations Specialist</h3>
-						<p class="education-meta">Acacia Premier Hotel · Kenya</p>
-						<p>Operational IT management, infrastructure maintenance, and guest services technology support.</p>
-					</div>
-					
 					<h3 style="margin-top: 1.8rem; color: #1e3a8a;">Interests & Passions</h3>
 					<ul style="list-style: none; padding: 0; margin-top: 0.8rem;">
 						<li>⚽ Football enthusiast & Manchester United supporter</li>
@@ -87,6 +59,35 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 					</ul>
 				</div>
 			</div>
+		</div>
+	</section>
+
+	<section class="career-section">
+		<h2>Career Journey</h2>
+		<div class="career-grid">
+			<article class="career-card">
+				<h3>IT Support Specialist</h3>
+				<p class="career-meta">Pandora A/S · Copenhagen, Denmark</p>
+				<p>Enterprise IT operations, system governance, and operational security support for global infrastructure.</p>
+			</article>
+			
+			<article class="career-card">
+				<h3>Internet of Things Research Assistant</h3>
+				<p class="career-meta">Aalborg University · Denmark</p>
+				<p>Research in IoT systems, connected infrastructure, and emerging technology applications.</p>
+			</article>
+			
+			<article class="career-card">
+				<h3>Information Technology Specialist</h3>
+				<p class="career-meta">Secope Solutions LTD · Kisumu, Kenya</p>
+				<p>IT consulting, system integration, and technology solutions for regional enterprises.</p>
+			</article>
+			
+			<article class="career-card">
+				<h3>IT Operations Specialist</h3>
+				<p class="career-meta">Acacia Premier Hotel · Kenya</p>
+				<p>Operational IT management, infrastructure maintenance, and guest services technology support.</p>
+			</article>
 		</div>
 	</section>
 
@@ -274,10 +275,69 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 		font-weight: bold;
 	}
 
+	.career-section {
+		margin-bottom: 2rem;
+	}
+
+	.career-section h2 {
+		font-size: 1.8rem;
+		color: #0f172a;
+		margin: 0 0 1.5rem 0;
+		font-weight: 700;
+		border-bottom: 3px solid #1e3a8a;
+		padding-bottom: 0.5rem;
+	}
+
+	.career-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.5rem;
+	}
+
+	.career-card {
+		background: #ffffff;
+		border: 1px solid #e0e7ff;
+		border-radius: 10px;
+		padding: 1.5rem;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
+	}
+
+	.career-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 20px rgba(30, 58, 138, 0.15);
+		border-color: #1e3a8a;
+	}
+
+	.career-card h3 {
+		font-size: 1.1rem;
+		color: #0f172a;
+		margin: 0 0 0.5rem 0;
+		font-weight: 700;
+	}
+
+	.career-meta {
+		font-size: 0.85rem;
+		color: #1e3a8a;
+		font-weight: 600;
+		margin: 0 0 0.8rem 0;
+	}
+
+	.career-card p {
+		font-size: 0.9rem;
+		color: #475569;
+		line-height: 1.6;
+		margin: 0;
+	}
+
 	@media (max-width: 900px) {
 		.profile-grid {
 			grid-template-columns: 1fr;
 			gap: 2rem;
+		}
+
+		.career-grid {
+			grid-template-columns: 1fr;
 		}
 
 		.profile-meta {
