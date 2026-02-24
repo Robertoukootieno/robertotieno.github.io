@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import robertImage from '../assets/robert.jpeg';
 ---
 
 <BaseLayout title="Robert Otieno | Enterprise Identity, Security & IT Operations Architect" description="Building enterprise-grade identity platforms with zero-trust architecture, privacy-by-design, and automation-driven security.">
@@ -29,8 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		<h2>About Me</h2>
 		<div class="about-layout">
 			<div class="about-visual" aria-hidden="true">
-			<div class="portrait" style="--portrait-image: url('https://via.placeholder.com/156x156?text=RO')">RO</div>
-			<p style="text-align: center; font-size: 0.85rem; color: #6b7280; margin-top: -0.5rem;">Replace with your photo URL</p>
+			<img src={robertImage.src} alt="Robert Otieno" class="portrait-image" />
 				<div class="badge-row">
 					<span>Zero Trust</span>
 					<span>Privacy-Engineered</span>
@@ -435,22 +435,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 	}
 
-	.portrait {
+	.portrait-image {
 		width: 180px;
 		height: 180px;
 		margin: 0 auto 1.2rem;
 		border-radius: 50%;
-		display: grid;
-		place-items: center;
-		font-size: 2.4rem;
-		font-weight: 700;
-		color: #1e3a8a;
-		background-image: var(--portrait-image);
-		background-size: cover;
-		background-position: center;
-		background-color: linear-gradient(180deg, #eaf0ff 0%, #ffffff 100%);
+		display: block;
+		object-fit: cover;
 		border: 4px solid #1e3a8a;
-		overflow: hidden;
 		box-shadow: 0 4px 16px rgba(30, 58, 138, 0.15);
 	}
 
