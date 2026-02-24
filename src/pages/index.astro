@@ -95,8 +95,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		<div class="works-grid">
 			<article class="work-card" data-tags="ssi privacy">
 				<p class="work-tag">SSI · Privacy</p>
-				<h3>Decentralized Employment Verification System</h3>
-				<p>SSI platform integration using EBSI and walt.id, with credential issuance, selective disclosure, and verification pipelines.</p>
+				<h3>Self-Sovereign Identities and Verifiable Credentials</h3>
+				<p>End-to-end SSI ecosystem for employment verification using EBSI, walt.id, and Hyperledger technologies. Implements credential issuance, selective disclosure, and privacy-preserving verification flows with automation-driven DevOps infrastructure.</p>
+				<div class="work-tech-stack">
+					<strong>Stack:</strong> Python, Node.js, Docker, Kubernetes, IPFS, Hyperledger Besu
+					<br><strong>Frameworks:</strong> walt.id, EBSI, OpenID4VC
+					<br><strong>DevOps:</strong> CI/CD pipelines, containerized microservices, automated testing
+				</div>
+				<div class="work-links">
+					<a href="https://github.com/Robertoukootieno/EmploymentVC" target="_blank" rel="noreferrer">→ GitHub Repository</a>
+					<a href="https://projekter.aau.dk/enhancing-trust-in-employment-verification-through-self-sovereign-identity-and-distributed-ledger-te-9f227259.html" target="_blank" rel="noreferrer">→ Full Documentation</a>
+				</div>
 				<button class="work-btn" data-case="employment">Explore Full Case Study</button>
 			</article>
 			<article class="work-card" data-tags="iam itops">
@@ -539,6 +548,47 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 		font-size: 0.82rem;
 		font-weight: 600;
 		color: #1e3a8a;
+	}
+
+	.work-tech-stack {
+		font-size: 0.87rem;
+		color: #475569;
+		margin: 0.8rem 0;
+		padding: 0.8rem;
+		border-left: 3px solid #1e3a8a;
+		background: #f8faff;
+		border-radius: 6px;
+		line-height: 1.6;
+	}
+
+	.work-tech-stack strong {
+		color: #1e3a8a;
+		font-weight: 600;
+	}
+
+	.work-links {
+		display: flex;
+		gap: 0.8rem;
+		flex-wrap: wrap;
+		margin: 0.8rem 0;
+		font-size: 0.9rem;
+	}
+
+	.work-links a {
+		display: inline-flex;
+		align-items: center;
+		color: #1e3a8a;
+		text-decoration: none;
+		font-weight: 500;
+		transition: all 0.2s ease;
+		padding: 0.4rem 0.6rem;
+		border-radius: 6px;
+	}
+
+	.work-links a:hover {
+		background: #dbe4ff;
+		color: #0f4f9e;
+		text-decoration: underline;
 	}
 
 	.partner-row {
