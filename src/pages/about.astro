@@ -1,534 +1,604 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const baseUrl = import.meta.env.BASE_URL;
-const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
+const basePath = baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
 ---
 
-<BaseLayout title="About | Robert Otieno" description="About Robert Otieno, Enterprise Identity, Security & IT Operations Architect.">
-	<section class="profile-section">
-		<div class="profile-container">
-			<div class="profile-header">
-				<h1>Robert Otieno</h1>
-				<p class="profile-title">Enterprise Identity, Security & IT Operations Architect</p>
-				<div class="profile-meta">
-					<span class="meta-item">📍 Copenhagen, Denmark</span>
-					<span class="meta-item">🇰🇪 Kenyan</span>
-				</div>
-			</div>
+<BaseLayout
+  title="About | Robert Otieno"
+  description="About Robert Otieno, Enterprise Identity, Security & IT Operations Architect."
+>
+  <section class="profile-section">
+    <div class="profile-container">
+      <div class="profile-header">
+        <h1>Robert Otieno</h1>
+        <p class="profile-title">
+          Enterprise Identity, Security & IT Operations Architect
+        </p>
+        <div class="profile-meta">
+          <span class="meta-item">📍 Copenhagen, Denmark</span>
+          <span class="meta-item">🇰🇪 Kenyan</span>
+        </div>
+      </div>
 
-			<div class="profile-grid">
-				<div class="profile-bio">
-					<h2>About Me</h2>
-					<p>
-						From competitive football to enterprise security architecture — the arena changed, but the ambition only grew. With roots in Nyakach, Kisumu County, Kenya, I developed discipline and competitive drive early. Football shaped my mindset: structure matters, positioning matters, and performance is earned. I still play — because high standards are maintained, not remembered.
-					</p>
-					<p>
-						My technology journey began in Kenya, building foundations in systems and infrastructure. It accelerated in Denmark habing been inspired by non other than Junior Dongo, where I deepened my focus on identity architecture, zero-trust security,IOT technologies, and privacy-engineered systems.
-					</p>
-					<p>
-						Today, I design IAM, IGA, PAM, and decentralized identity solutions that align governance with business strategy. But I'm not interested in maintaining systems — I aspire to build more. More resilient architectures. More intelligent trust frameworks. More scalable identity ecosystems that redefine how organizations operate securely.
-					</p>
-					<p>
-						The field changed. The ambition expanded. And I'm building at a higher level.
-					</p>
-				</div>
+      <div class="profile-grid">
+        <div class="profile-bio">
+          <h2>About Me</h2>
+          <p>
+            From competitive football to enterprise security architecture — the
+            arena changed, but the ambition only grew. With roots in Nyakach,
+            Kisumu County, Kenya, I developed discipline and competitive drive
+            early. Football shaped my mindset: structure matters, positioning
+            matters, and performance is earned. I still play — because high
+            standards are maintained, not remembered.
+          </p>
+          <p>
+            My technology journey began in Kenya, where I built a strong
+            foundation in systems engineering and infrastructure thinking. It
+            accelerated in Denmark, inspired by Junior Dongo’s discipline and
+            resilience, as I sharpened my focus on identity architecture,
+            zero-trust security models, IoT ecosystems, and privacy-engineered
+            systems designed for real-world scale.
+          </p>
+          <p>
+            Today, I design and operationalize secure digital services using
+            first-principles thinking — transforming complex enterprise
+            challenges into scalable, automated, and resilient architectures.I
+            embed DevOps, CI/CD, IAM automation, cloud migration, and
+            decentralized identity directly into delivery pipelines, aligning
+            governance, security, and IT operations with real business impact.
+          </p>
+          <p>
+            The field changed. The ambition expanded. And I'm building at a
+            higher level.
+          </p>
+        </div>
 
-				<div class="profile-education">
-					<h2>Education & Background</h2>
-					
-					<div class="education-item">
-						<h3>MSc Engineering in Innovative Communication Technologies & Entrepreneurship</h3>
-						<p class="education-meta">Aalborg University Copenhagen · Denmark</p>
-						<p>Advanced study in communication technologies, innovation-driven entrepreneurship, and emerging tech solutions.</p>
-					</div>
-					
-					<div class="education-item">
-						<h3>Bachelor of Science in Information Technology</h3>
-						<p class="education-meta">Jomo Kenyatta University of Agriculture & Technology · Jun 2022</p>
-						<p>Based in Nairobi, Kenya. Foundation in software development, systems architecture, and IT infrastructure.</p>
-					</div>
-					
-					<h3 style="margin-top: 1.8rem; color: #1e3a8a;">Interests & Passions</h3>
-					<ul style="list-style: none; padding: 0; margin-top: 0.8rem;">
-						<li>⚽ Football enthusiast & Manchester United supporter</li>
-						<li>🔐 Enterprise security and identity architecture</li>
-						<li>🚀 Technology innovation and emerging standards</li>
-						<li>🌍 Building resilient systems for global enterprises</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="profile-education">
+          <h2>Education & Background</h2>
 
-	<section class="career-section">
-		<h2>Career Journey</h2>
-		<div class="career-grid">
-			<article class="career-card">
-				<h3>IT Support Specialist</h3>
-				<p class="career-meta">Pandora A/S · Copenhagen, Denmark</p>
-				<p>Enterprise IT operations, system governance, and operational security support for global infrastructure.</p>
-			</article>
-			
-			<article class="career-card">
-				<h3>Internet of Things Research Assistant</h3>
-				<p class="career-meta">Aalborg University · Denmark</p>
-				<p>Research in IoT systems, connected infrastructure, and emerging technology applications.</p>
-			</article>
-			
-			<article class="career-card">
-				<h3>Information Technology Specialist</h3>
-				<p class="career-meta">Secope Solutions LTD · Kisumu, Kenya</p>
-				<p>IT consulting, system integration, and technology solutions for regional enterprises.</p>
-			</article>
-			
-			<article class="career-card">
-				<h3>IT Operations Specialist</h3>
-				<p class="career-meta">Acacia Premier Hotel · Kenya</p>
-				<p>Operational IT management, infrastructure maintenance, and guest services technology support.</p>
-			</article>
-		</div>
-	</section>
+          <div class="education-item">
+            <h3>
+              MSc Engineering in Innovative Communication Technologies &
+              Entrepreneurship
+            </h3>
+            <p class="education-meta">
+              Aalborg University Copenhagen · Denmark
+            </p>
+            <p>
+              Advanced study in communication technologies, innovation-driven
+              entrepreneurship, and emerging tech solutions.
+            </p>
+          </div>
 
-	<section class="principles-section">
-		<h2>Core Principles</h2>
-		<p class="section-intro">Four foundational pillars that guide my approach to enterprise identity architecture and security design.</p>
-		<div class="principles-grid">
-			<article class="principle-card">
-				<div class="principle-number">01</div>
-				<h3>Identity as Control Plane</h3>
-				<p>Security posture starts with reliable identity context and consistent access decisions.</p>
-			</article>
-			<article class="principle-card">
-				<div class="principle-number">02</div>
-				<h3>Operational Integration</h3>
-				<p>Policy value is realized only when IAM controls are embedded in incident and change workflows.</p>
-			</article>
-			<article class="principle-card">
-				<div class="principle-number">03</div>
-				<h3>Privacy by Architecture</h3>
-				<p>Privacy is treated as a design constraint, not an afterthought, with explicit minimization choices.</p>
-			</article>
-			<article class="principle-card">
-				<div class="principle-number">04</div>
-				<h3>Automation for Scale</h3>
-				<p>Governance must be repeatable, auditable, and operationally sustainable across enterprise growth.</p>
-			</article>
-		</div>
-	</section>
+          <div class="education-item">
+            <h3>Bachelor of Science in Information Technology</h3>
+            <p class="education-meta">
+              Jomo Kenyatta University of Agriculture & Technology · Jun 2022
+            </p>
+            <p>
+              Based in Nairobi, Kenya. Foundation in software development,
+              systems architecture, and IT infrastructure.
+            </p>
+          </div>
 
-	<section class="direction-section">
-		<div class="direction-container">
-			<div class="direction-badge">Current Focus</div>
-			<h2>Where I'm Building Next</h2>
-			<p class="direction-content">
-				I am focused on enterprise IAM modernization, access governance transformation, and practical pathways for decentralized identity in
-				real-world organizations. My work centers on bridging the gap between emerging identity standards and operational realities — building systems that scale without sacrificing security or privacy.
-			</p>
-		</div>
-	</section>
+          <h3 style="margin-top: 1.8rem; color: #1e3a8a;">
+            Interests & Passions
+          </h3>
+          <ul style="list-style: none; padding: 0; margin-top: 0.8rem;">
+            <li>⚽ Football enthusiast & Manchester United supporter</li>
+            <li>🔐 Enterprise security and identity architecture</li>
+            <li>🚀 Technology innovation and emerging standards</li>
+            <li>🌍 Building resilient systems for global enterprises</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="career-section">
+    <h2>Career Journey</h2>
+    <div class="career-grid">
+      <article class="career-card">
+        <h3>IT Support Specialist</h3>
+        <p class="career-meta">Pandora A/S · Copenhagen, Denmark</p>
+        <p>
+          Enterprise IT operations, system governance, and operational security
+          support for global infrastructure.
+        </p>
+      </article>
+
+      <article class="career-card">
+        <h3>Internet of Things Research Assistant</h3>
+        <p class="career-meta">Aalborg University · Denmark</p>
+        <p>
+          Research in IoT systems, connected infrastructure, and emerging
+          technology applications.
+        </p>
+      </article>
+
+      <article class="career-card">
+        <h3>Information Technology Specialist</h3>
+        <p class="career-meta">Secope Solutions LTD · Kisumu, Kenya</p>
+        <p>
+          IT consulting, system integration, and technology solutions for
+          regional enterprises.
+        </p>
+      </article>
+
+      <article class="career-card">
+        <h3>IT Operations Specialist</h3>
+        <p class="career-meta">Acacia Premier Hotel · Kenya</p>
+        <p>
+          Operational IT management, infrastructure maintenance, and guest
+          services technology support.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="principles-section">
+    <h2>Core Principles</h2>
+    <p class="section-intro">
+      Four foundational pillars that guide my approach to enterprise identity
+      architecture and security design.
+    </p>
+    <div class="principles-grid">
+      <article class="principle-card">
+        <div class="principle-number">01</div>
+        <h3>Identity as Control Plane</h3>
+        <p>
+          Security posture starts with reliable identity context and consistent
+          access decisions.
+        </p>
+      </article>
+      <article class="principle-card">
+        <div class="principle-number">02</div>
+        <h3>Operational Integration</h3>
+        <p>
+          Policy value is realized only when IAM controls are embedded in
+          incident and change workflows.
+        </p>
+      </article>
+      <article class="principle-card">
+        <div class="principle-number">03</div>
+        <h3>Privacy by Architecture</h3>
+        <p>
+          Privacy is treated as a design constraint, not an afterthought, with
+          explicit minimization choices.
+        </p>
+      </article>
+      <article class="principle-card">
+        <div class="principle-number">04</div>
+        <h3>Automation for Scale</h3>
+        <p>
+          Governance must be repeatable, auditable, and operationally
+          sustainable across enterprise growth.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="direction-section">
+    <div class="direction-container">
+      <div class="direction-badge">Current Focus</div>
+      <h2>Where I'm Building Next</h2>
+      <p class="direction-content">
+        I am focused on enterprise IAM modernization, access governance
+        transformation, and practical pathways for decentralized identity in
+        real-world organizations. My work centers on bridging the gap between
+        emerging identity standards and operational realities — building systems
+        that scale without sacrificing security or privacy.
+      </p>
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
-	.profile-section {
-		background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
-		border-radius: 12px;
-		padding: clamp(1.5rem, 5vw, 2.5rem);
-		margin-bottom: 2rem;
-		border: 1px solid #e0e7ff;
-	}
+  .profile-section {
+    background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+    border-radius: 12px;
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    margin-bottom: 2rem;
+    border: 1px solid #e0e7ff;
+  }
 
-	.profile-container {
-		max-width: 1200px;
-		margin: 0 auto;
-	}
+  .profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
-	.profile-header {
-		text-align: center;
-		margin-bottom: 2.5rem;
-		padding-bottom: 2rem;
-		border-bottom: 2px solid #1e3a8a;
-	}
+  .profile-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid #1e3a8a;
+  }
 
-	.profile-header h1 {
-		font-size: clamp(2rem, 5vw, 3rem);
-		color: #0f172a;
-		margin: 0 0 0.5rem 0;
-		font-weight: 800;
-		letter-spacing: -0.02em;
-	}
+  .profile-header h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #0f172a;
+    margin: 0 0 0.5rem 0;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
 
-	.profile-title {
-		font-size: 1.1rem;
-		color: #1e3a8a;
-		font-weight: 600;
-		margin: 0 0 1rem 0;
-	}
+  .profile-title {
+    font-size: 1.1rem;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin: 0 0 1rem 0;
+  }
 
-	.profile-meta {
-		display: flex;
-		justify-content: center;
-		gap: 1.5rem;
-		flex-wrap: wrap;
-	}
+  .profile-meta {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
 
-	.meta-item {
-		font-size: 0.95rem;
-		color: #475569;
-		font-weight: 500;
-	}
+  .meta-item {
+    font-size: 0.95rem;
+    color: #475569;
+    font-weight: 500;
+  }
 
-	.profile-grid {
-		display: grid;
-		grid-template-columns: 1.2fr 1fr;
-		gap: 2.5rem;
-	}
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2.5rem;
+  }
 
-	.profile-bio h2,
-	.profile-education h2 {
-		font-size: 1.5rem;
-		color: #0f172a;
-		margin: 0 0 1.2rem 0;
-		font-weight: 700;
-		border-bottom: 2px solid #1e3a8a;
-		padding-bottom: 0.5rem;
-	}
+  .profile-bio h2,
+  .profile-education h2 {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin: 0 0 1.2rem 0;
+    font-weight: 700;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 0.5rem;
+  }
 
-	.profile-bio p {
-		font-size: 0.95rem;
-		line-height: 1.7;
-		color: #334155;
-		margin-bottom: 1.2rem;
-	}
+  .profile-bio p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #334155;
+    margin-bottom: 1.2rem;
+  }
 
-	.profile-bio p:last-of-type {
-		margin-bottom: 0;
-	}
+  .profile-bio p:last-of-type {
+    margin-bottom: 0;
+  }
 
-	.education-item {
-		margin-bottom: 1.8rem;
-	}
+  .education-item {
+    margin-bottom: 1.8rem;
+  }
 
-	.education-item h3 {
-		font-size: 1rem;
-		color: #0f172a;
-		margin: 0 0 0.4rem 0;
-		font-weight: 700;
-	}
+  .education-item h3 {
+    font-size: 1rem;
+    color: #0f172a;
+    margin: 0 0 0.4rem 0;
+    font-weight: 700;
+  }
 
-	.education-meta {
-		font-size: 0.85rem;
-		color: #1e3a8a;
-		font-weight: 600;
-		margin: 0 0 0.6rem 0;
-	}
+  .education-meta {
+    font-size: 0.85rem;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin: 0 0 0.6rem 0;
+  }
 
-	.education-item p {
-		font-size: 0.9rem;
-		color: #475569;
-		line-height: 1.6;
-		margin: 0;
-	}
+  .education-item p {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+  }
 
-	.education-item ul {
-		list-style: none;
-		padding: 0;
-		margin: 0.6rem 0 0 0;
-	}
+  .education-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0.6rem 0 0 0;
+  }
 
-	.education-item ul li {
-		font-size: 0.9rem;
-		color: #334155;
-		padding-left: 1.5rem;
-		margin-bottom: 0.5rem;
-		position: relative;
-	}
+  .education-item ul li {
+    font-size: 0.9rem;
+    color: #334155;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+  }
 
-	.education-item ul li::before {
-		content: "✓";
-		position: absolute;
-		left: 0;
-		color: #1e3a8a;
-		font-weight: bold;
-	}
+  .education-item ul li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #1e3a8a;
+    font-weight: bold;
+  }
 
-	.profile-education h3 {
-		font-size: 1rem;
-		color: #1e3a8a;
-		margin: 1.5rem 0 0.8rem 0;
-		font-weight: 700;
-	}
+  .profile-education h3 {
+    font-size: 1rem;
+    color: #1e3a8a;
+    margin: 1.5rem 0 0.8rem 0;
+    font-weight: 700;
+  }
 
-	.profile-education ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
+  .profile-education ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-	.profile-education ul li {
-		font-size: 0.9rem;
-		color: #334155;
-		padding-left: 1.8rem;
-		margin-bottom: 0.6rem;
-		position: relative;
-		line-height: 1.5;
-	}
+  .profile-education ul li {
+    font-size: 0.9rem;
+    color: #334155;
+    padding-left: 1.8rem;
+    margin-bottom: 0.6rem;
+    position: relative;
+    line-height: 1.5;
+  }
 
-	.profile-education ul li::before {
-		content: "→";
-		position: absolute;
-		left: 0;
-		color: #1e3a8a;
-		font-weight: bold;
-	}
+  .profile-education ul li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #1e3a8a;
+    font-weight: bold;
+  }
 
-	.career-section {
-		margin-bottom: 2rem;
-	}
+  .career-section {
+    margin-bottom: 2rem;
+  }
 
-	.career-section h2 {
-		font-size: 1.8rem;
-		color: #0f172a;
-		margin: 0 0 1.5rem 0;
-		font-weight: 700;
-		border-bottom: 3px solid #1e3a8a;
-		padding-bottom: 0.5rem;
-	}
+  .career-section h2 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin: 0 0 1.5rem 0;
+    font-weight: 700;
+    border-bottom: 3px solid #1e3a8a;
+    padding-bottom: 0.5rem;
+  }
 
-	.career-grid {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 1.5rem;
-	}
+  .career-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
 
-	.career-card {
-		background: #ffffff;
-		border: 1px solid #e0e7ff;
-		border-radius: 10px;
-		padding: 1.5rem;
-		transition: all 0.3s ease;
-		box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
-	}
+  .career-card {
+    background: #ffffff;
+    border: 1px solid #e0e7ff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(30, 58, 138, 0.08);
+  }
 
-	.career-card:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 8px 20px rgba(30, 58, 138, 0.15);
-		border-color: #1e3a8a;
-	}
+  .career-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.15);
+    border-color: #1e3a8a;
+  }
 
-	.career-card h3 {
-		font-size: 1.1rem;
-		color: #0f172a;
-		margin: 0 0 0.5rem 0;
-		font-weight: 700;
-	}
+  .career-card h3 {
+    font-size: 1.1rem;
+    color: #0f172a;
+    margin: 0 0 0.5rem 0;
+    font-weight: 700;
+  }
 
-	.career-meta {
-		font-size: 0.85rem;
-		color: #1e3a8a;
-		font-weight: 600;
-		margin: 0 0 0.8rem 0;
-	}
+  .career-meta {
+    font-size: 0.85rem;
+    color: #1e3a8a;
+    font-weight: 600;
+    margin: 0 0 0.8rem 0;
+  }
 
-	.career-card p {
-		font-size: 0.9rem;
-		color: #475569;
-		line-height: 1.6;
-		margin: 0;
-	}
+  .career-card p {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+  }
 
-	.principles-section {
-		margin-bottom: 2.5rem;
-	}
+  .principles-section {
+    margin-bottom: 2.5rem;
+  }
 
-	.principles-section h2 {
-		font-size: 1.8rem;
-		color: #0f172a;
-		margin: 0 0 0.8rem 0;
-		font-weight: 700;
-		border-bottom: 3px solid #1e3a8a;
-		padding-bottom: 0.5rem;
-	}
+  .principles-section h2 {
+    font-size: 1.8rem;
+    color: #0f172a;
+    margin: 0 0 0.8rem 0;
+    font-weight: 700;
+    border-bottom: 3px solid #1e3a8a;
+    padding-bottom: 0.5rem;
+  }
 
-	.section-intro {
-		font-size: 1rem;
-		color: #475569;
-		margin: 0 0 2rem 0;
-		line-height: 1.7;
-	}
+  .section-intro {
+    font-size: 1rem;
+    color: #475569;
+    margin: 0 0 2rem 0;
+    line-height: 1.7;
+  }
 
-	.principles-grid {
-		display: grid;
-		grid-template-columns: repeat(2, minmax(0, 1fr));
-		gap: 1.5rem;
-	}
+  .principles-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
 
-	.principle-card {
-		background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
-		border: 2px solid #e0e7ff;
-		border-radius: 12px;
-		padding: 1.8rem;
-		position: relative;
-		transition: all 0.3s ease;
-		overflow: hidden;
-	}
+  .principle-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+    border: 2px solid #e0e7ff;
+    border-radius: 12px;
+    padding: 1.8rem;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
 
-	.principle-card::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 4px;
-		height: 100%;
-		background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
-		transform: scaleY(0);
-		transform-origin: bottom;
-		transition: transform 0.3s ease;
-	}
+  .principle-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.3s ease;
+  }
 
-	.principle-card:hover::before {
-		transform: scaleY(1);
-		transform-origin: top;
-	}
+  .principle-card:hover::before {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
 
-	.principle-card:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 10px 30px rgba(30, 58, 138, 0.15);
-		border-color: #1e3a8a;
-	}
+  .principle-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(30, 58, 138, 0.15);
+    border-color: #1e3a8a;
+  }
 
-	.principle-number {
-		display: inline-block;
-		font-size: 1.8rem;
-		font-weight: 800;
-		color: #1e3a8a;
-		opacity: 0.2;
-		margin-bottom: 0.8rem;
-		font-family: monospace;
-		letter-spacing: -0.05em;
-	}
+  .principle-number {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1e3a8a;
+    opacity: 0.2;
+    margin-bottom: 0.8rem;
+    font-family: monospace;
+    letter-spacing: -0.05em;
+  }
 
-	.principle-card h3 {
-		font-size: 1.15rem;
-		color: #0f172a;
-		margin: 0 0 0.8rem 0;
-		font-weight: 700;
-		line-height: 1.3;
-	}
+  .principle-card h3 {
+    font-size: 1.15rem;
+    color: #0f172a;
+    margin: 0 0 0.8rem 0;
+    font-weight: 700;
+    line-height: 1.3;
+  }
 
-	.principle-card p {
-		font-size: 0.9rem;
-		color: #475569;
-		line-height: 1.7;
-		margin: 0;
-	}
+  .principle-card p {
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.7;
+    margin: 0;
+  }
 
-	.direction-section {
-		margin-bottom: 2.5rem;
-		background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-		border-radius: 12px;
-		padding: clamp(2rem, 5vw, 3rem);
-		color: #ffffff;
-		position: relative;
-		overflow: hidden;
-	}
+  .direction-section {
+    margin-bottom: 2.5rem;
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+    border-radius: 12px;
+    padding: clamp(2rem, 5vw, 3rem);
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+  }
 
-	.direction-section::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 300px;
-		height: 300px;
-		background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
-		border-radius: 50%;
-		transform: translate(40%, -40%);
-	}
+  .direction-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 70%
+    );
+    border-radius: 50%;
+    transform: translate(40%, -40%);
+  }
 
-	.direction-container {
-		position: relative;
-		z-index: 1;
-		max-width: 900px;
-	}
+  .direction-container {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+  }
 
-	.direction-badge {
-		display: inline-block;
-		background: rgba(255, 255, 255, 0.2);
-		color: #ffffff;
-		padding: 0.4rem 1rem;
-		border-radius: 20px;
-		font-size: 0.8rem;
-		font-weight: 600;
-		text-transform: uppercase;
-		letter-spacing: 0.05em;
-		margin-bottom: 1rem;
-		border: 1px solid rgba(255, 255, 255, 0.3);
-	}
+  .direction-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
 
-	.direction-section h2 {
-		font-size: clamp(1.5rem, 4vw, 2rem);
-		color: #ffffff;
-		margin: 0 0 1.2rem 0;
-		font-weight: 800;
-		line-height: 1.2;
-	}
+  .direction-section h2 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    color: #ffffff;
+    margin: 0 0 1.2rem 0;
+    font-weight: 800;
+    line-height: 1.2;
+  }
 
-	.direction-content {
-		font-size: 1.05rem;
-		color: rgba(255, 255, 255, 0.95);
-		line-height: 1.8;
-		margin: 0;
-	}
+  .direction-content {
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.8;
+    margin: 0;
+  }
 
-	@media (max-width: 900px) {
-		.profile-grid {
-			grid-template-columns: 1fr;
-			gap: 2rem;
-		}
+  @media (max-width: 900px) {
+    .profile-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
 
-		.career-grid {
-			grid-template-columns: 1fr;
-		}
+    .career-grid {
+      grid-template-columns: 1fr;
+    }
 
-		.principles-grid {
-			grid-template-columns: 1fr;
-		}
+    .principles-grid {
+      grid-template-columns: 1fr;
+    }
 
-		.profile-meta {
-			flex-direction: column;
-			gap: 0.8rem;
-		}
+    .profile-meta {
+      flex-direction: column;
+      gap: 0.8rem;
+    }
 
-		.profile-header h1 {
-			font-size: 1.8rem;
-		}
-	}
+    .profile-header h1 {
+      font-size: 1.8rem;
+    }
+  }
 
-	@media (max-width: 600px) {
-		.profile-section {
-			padding: 1rem;
-			margin-bottom: 1.5rem;
-		}
+  @media (max-width: 600px) {
+    .profile-section {
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
 
-		.profile-header {
-			margin-bottom: 1.8rem;
-			padding-bottom: 1.5rem;
-		}
+    .profile-header {
+      margin-bottom: 1.8rem;
+      padding-bottom: 1.5rem;
+    }
 
-		.profile-header h1 {
-			font-size: 1.5rem;
-		}
+    .profile-header h1 {
+      font-size: 1.5rem;
+    }
 
-		.profile-title {
-			font-size: 0.95rem;
-		}
+    .profile-title {
+      font-size: 0.95rem;
+    }
 
-		.profile-meta {
-			gap: 0.8rem;
-		}
+    .profile-meta {
+      gap: 0.8rem;
+    }
 
-		.meta-item {
-			font-size: 0.85rem;
-		}
-	}
+    .meta-item {
+      font-size: 0.85rem;
+    }
+  }
 </style>
