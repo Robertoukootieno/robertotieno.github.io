@@ -91,34 +91,42 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 		</div>
 	</section>
 
-	<section>
-		<h2>Principles</h2>
-		<div class="grid">
-			<article class="card">
+	<section class="principles-section">
+		<h2>Core Principles</h2>
+		<p class="section-intro">Four foundational pillars that guide my approach to enterprise identity architecture and security design.</p>
+		<div class="principles-grid">
+			<article class="principle-card">
+				<div class="principle-number">01</div>
 				<h3>Identity as Control Plane</h3>
 				<p>Security posture starts with reliable identity context and consistent access decisions.</p>
 			</article>
-			<article class="card">
+			<article class="principle-card">
+				<div class="principle-number">02</div>
 				<h3>Operational Integration</h3>
 				<p>Policy value is realized only when IAM controls are embedded in incident and change workflows.</p>
 			</article>
-			<article class="card">
+			<article class="principle-card">
+				<div class="principle-number">03</div>
 				<h3>Privacy by Architecture</h3>
 				<p>Privacy is treated as a design constraint, not an afterthought, with explicit minimization choices.</p>
 			</article>
-			<article class="card">
+			<article class="principle-card">
+				<div class="principle-number">04</div>
 				<h3>Automation for Scale</h3>
 				<p>Governance must be repeatable, auditable, and operationally sustainable across enterprise growth.</p>
 			</article>
 		</div>
 	</section>
 
-	<section>
-		<h2>Current Direction</h2>
-		<p>
-			I am focused on enterprise IAM modernization, access governance transformation, and practical pathways for decentralized identity in
-			real-world organizations.
-		</p>
+	<section class="direction-section">
+		<div class="direction-container">
+			<div class="direction-badge">Current Focus</div>
+			<h2>Where I'm Building Next</h2>
+			<p class="direction-content">
+				I am focused on enterprise IAM modernization, access governance transformation, and practical pathways for decentralized identity in
+				real-world organizations. My work centers on bridging the gap between emerging identity standards and operational realities — building systems that scale without sacrificing security or privacy.
+			</p>
+		</div>
 	</section>
 </BaseLayout>
 
@@ -330,6 +338,149 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 		margin: 0;
 	}
 
+	.principles-section {
+		margin-bottom: 2.5rem;
+	}
+
+	.principles-section h2 {
+		font-size: 1.8rem;
+		color: #0f172a;
+		margin: 0 0 0.8rem 0;
+		font-weight: 700;
+		border-bottom: 3px solid #1e3a8a;
+		padding-bottom: 0.5rem;
+	}
+
+	.section-intro {
+		font-size: 1rem;
+		color: #475569;
+		margin: 0 0 2rem 0;
+		line-height: 1.7;
+	}
+
+	.principles-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1.5rem;
+	}
+
+	.principle-card {
+		background: linear-gradient(135deg, #ffffff 0%, #f8faff 100%);
+		border: 2px solid #e0e7ff;
+		border-radius: 12px;
+		padding: 1.8rem;
+		position: relative;
+		transition: all 0.3s ease;
+		overflow: hidden;
+	}
+
+	.principle-card::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 4px;
+		height: 100%;
+		background: linear-gradient(180deg, #1e3a8a 0%, #3b82f6 100%);
+		transform: scaleY(0);
+		transform-origin: bottom;
+		transition: transform 0.3s ease;
+	}
+
+	.principle-card:hover::before {
+		transform: scaleY(1);
+		transform-origin: top;
+	}
+
+	.principle-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 10px 30px rgba(30, 58, 138, 0.15);
+		border-color: #1e3a8a;
+	}
+
+	.principle-number {
+		display: inline-block;
+		font-size: 1.8rem;
+		font-weight: 800;
+		color: #1e3a8a;
+		opacity: 0.2;
+		margin-bottom: 0.8rem;
+		font-family: monospace;
+		letter-spacing: -0.05em;
+	}
+
+	.principle-card h3 {
+		font-size: 1.15rem;
+		color: #0f172a;
+		margin: 0 0 0.8rem 0;
+		font-weight: 700;
+		line-height: 1.3;
+	}
+
+	.principle-card p {
+		font-size: 0.9rem;
+		color: #475569;
+		line-height: 1.7;
+		margin: 0;
+	}
+
+	.direction-section {
+		margin-bottom: 2.5rem;
+		background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+		border-radius: 12px;
+		padding: clamp(2rem, 5vw, 3rem);
+		color: #ffffff;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.direction-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 300px;
+		height: 300px;
+		background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+		border-radius: 50%;
+		transform: translate(40%, -40%);
+	}
+
+	.direction-container {
+		position: relative;
+		z-index: 1;
+		max-width: 900px;
+	}
+
+	.direction-badge {
+		display: inline-block;
+		background: rgba(255, 255, 255, 0.2);
+		color: #ffffff;
+		padding: 0.4rem 1rem;
+		border-radius: 20px;
+		font-size: 0.8rem;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+		margin-bottom: 1rem;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.direction-section h2 {
+		font-size: clamp(1.5rem, 4vw, 2rem);
+		color: #ffffff;
+		margin: 0 0 1.2rem 0;
+		font-weight: 800;
+		line-height: 1.2;
+	}
+
+	.direction-content {
+		font-size: 1.05rem;
+		color: rgba(255, 255, 255, 0.95);
+		line-height: 1.8;
+		margin: 0;
+	}
+
 	@media (max-width: 900px) {
 		.profile-grid {
 			grid-template-columns: 1fr;
@@ -337,6 +488,10 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 		}
 
 		.career-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.principles-grid {
 			grid-template-columns: 1fr;
 		}
 
