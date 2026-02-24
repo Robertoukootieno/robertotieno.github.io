@@ -1,12 +1,35 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const baseUrl = import.meta.env.BASE_URL;
+const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <BaseLayout title="Projects | Robert Otieno" description="Selected architecture and IAM projects by Robert Otieno.">
-	<section>
+	<section class="hero" style="margin-top: 0;">
+		<div>
 		<p class="eyebrow">Selected Work</p>
 		<h1>Enterprise Security and Identity Systems</h1>
 		<p class="lead">A focused set of projects demonstrating architecture depth, governance rigor, and operational scalability.</p>
+		<div class="cta-row">
+			<a class="cta" href={`${basePath}portfolio/`}>Open Full Portfolio</a>
+			<a class="cta" href={`${basePath}about/`}>About Approach</a>
+		</div>
+		</div>
+		<div class="hero-art" aria-hidden="true">
+			<svg viewBox="0 0 420 280" width="100%">
+				<rect x="40" y="36" width="340" height="54" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+				<rect x="40" y="110" width="160" height="120" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+				<rect x="220" y="110" width="160" height="120" rx="8" fill="#f8faff" stroke="#1e3a8a" />
+				<text x="58" y="68" fill="#1f2937" font-size="13">Case Studies · Decisions · Trade-offs · Outcomes</text>
+				<text x="58" y="145" fill="#1f2937" font-size="12">Problem</text>
+				<text x="58" y="170" fill="#1f2937" font-size="12">Architecture</text>
+				<text x="58" y="195" fill="#1f2937" font-size="12">Security</text>
+				<text x="238" y="145" fill="#1e3a8a" font-size="12">Governance</text>
+				<text x="238" y="170" fill="#1e3a8a" font-size="12">Automation</text>
+				<text x="238" y="195" fill="#1e3a8a" font-size="12">Impact</text>
+			</svg>
+		</div>
 	</section>
 
 	<section>
@@ -27,6 +50,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<li>Designed for auditability without overexposure of identity data</li>
 				<li>Prioritized integration pathways for enterprise environments</li>
 			</ul>
+			<p><strong>Outcome:</strong> A privacy-centric verification model that supports enterprise integration without sacrificing trust controls.</p>
 		</article>
 	</section>
 
@@ -48,6 +72,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<li>Strengthened access review reliability</li>
 				<li>Improved audit readiness and governance consistency</li>
 			</ul>
+			<p><strong>Outcome:</strong> A more resilient and operationally sustainable IAM governance model.</p>
 		</article>
 	</section>
 </BaseLayout>

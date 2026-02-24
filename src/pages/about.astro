@@ -1,9 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const baseUrl = import.meta.env.BASE_URL;
+const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <BaseLayout title="About | Robert Otieno" description="About Robert Otieno, Enterprise Identity, Security & IT Operations Architect.">
-	<section>
+	<section class="hero" style="margin-top: 0;">
+		<div>
 		<p class="eyebrow">About</p>
 		<h1>Architecting Trust Infrastructure for Enterprise Systems</h1>
 		<p class="lead">
@@ -13,16 +17,44 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			My approach treats identity as infrastructure: access decisions must be measurable, governance must be operationally integrated, and privacy
 			must be embedded into the architecture from the start.
 		</p>
+		<div class="cta-row">
+			<a class="cta" href={`${basePath}projects/`}>View Projects</a>
+			<a class="cta" href={`${basePath}portfolio/`}>View Portfolio</a>
+		</div>
+		</div>
+		<div class="hero-art" aria-hidden="true">
+			<svg viewBox="0 0 420 280" width="100%">
+				<circle cx="90" cy="88" r="38" fill="#f8faff" stroke="#1e3a8a" />
+				<circle cx="210" cy="88" r="38" fill="#ffffff" stroke="#94a3b8" />
+				<circle cx="330" cy="88" r="38" fill="#ffffff" stroke="#94a3b8" />
+				<rect x="50" y="170" width="320" height="66" rx="9" fill="#ffffff" stroke="#cbd5e1" />
+				<path d="M128 88 H172" stroke="#1e3a8a" stroke-width="2" />
+				<path d="M248 88 H292" stroke="#1e3a8a" stroke-width="2" />
+				<text x="61" y="208" fill="#1f2937" font-size="13">Identity · Operations · Privacy · Automation</text>
+			</svg>
+		</div>
 	</section>
 
 	<section>
 		<h2>Principles</h2>
-		<ul>
-			<li>Identity is the control plane for modern enterprise security.</li>
-			<li>Operations translates policy into consistent execution.</li>
-			<li>Privacy is a non-negotiable system constraint.</li>
-			<li>Automation is required for scale and auditability.</li>
-		</ul>
+		<div class="grid">
+			<article class="card">
+				<h3>Identity as Control Plane</h3>
+				<p>Security posture starts with reliable identity context and consistent access decisions.</p>
+			</article>
+			<article class="card">
+				<h3>Operational Integration</h3>
+				<p>Policy value is realized only when IAM controls are embedded in incident and change workflows.</p>
+			</article>
+			<article class="card">
+				<h3>Privacy by Architecture</h3>
+				<p>Privacy is treated as a design constraint, not an afterthought, with explicit minimization choices.</p>
+			</article>
+			<article class="card">
+				<h3>Automation for Scale</h3>
+				<p>Governance must be repeatable, auditable, and operationally sustainable across enterprise growth.</p>
+			</article>
+		</div>
 	</section>
 
 	<section>

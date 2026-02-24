@@ -10,13 +10,14 @@ const {
 } = Astro.props;
 
 const baseUrl = import.meta.env.BASE_URL;
+const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 const normalize = (value: string) => value.replace(/\/+$/, '') || '/';
 const currentPath = normalize(Astro.url.pathname);
 
-const homeHref = baseUrl;
-const portfolioHref = `${baseUrl}portfolio/`;
-const aboutHref = `${baseUrl}about/`;
-const projectsHref = `${baseUrl}projects/`;
+const homeHref = basePath;
+const portfolioHref = `${basePath}portfolio/`;
+const aboutHref = `${basePath}about/`;
+const projectsHref = `${basePath}projects/`;
 
 const isHome = currentPath === normalize(homeHref);
 const isPortfolio = currentPath === normalize(portfolioHref);
@@ -47,6 +48,9 @@ const isProjects = currentPath === normalize(projectsHref);
 		<main class="container content">
 			<slot />
 		</main>
+		<footer class="container footer">
+			<p>Robert Otieno · Enterprise Identity, Security & IT Operations Architect</p>
+		</footer>
 	</body>
 </html>
 
@@ -57,6 +61,7 @@ const isProjects = currentPath === normalize(projectsHref);
 		--text: #1f2937;
 		--muted: #4b5563;
 		--accent: #1e3a8a;
+		--accent-soft: #e7edff;
 		--border: #e5e7eb;
 	}
 
@@ -68,7 +73,7 @@ const isProjects = currentPath === normalize(projectsHref);
 	body {
 		margin: 0;
 		padding: 0;
-		background: var(--bg);
+		background: #fafbfc;
 		color: var(--text);
 		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
 		line-height: 1.65;
@@ -85,28 +90,49 @@ const isProjects = currentPath === normalize(projectsHref);
 
 	header {
 		border-bottom: 1px solid var(--border);
+		background: #fff;
 	}
 
 	.container {
-		max-width: 860px;
+		max-width: min(900px, 100% - 2rem);
 		margin: 0 auto;
-		padding: 0 1.5rem;
+		padding: 0 clamp(1rem, 3vw, 2rem);
 	}
 
 	.nav {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 1.25rem;
 		padding-top: 1.1rem;
 		padding-bottom: 1.1rem;
 	}
 
+	.nav a {
+		padding: 0.4rem 0.6rem;
+		border-radius: 0.45rem;
+		border: 1px solid transparent;
+	}
+
 	.nav a[aria-current='page'] {
 		font-weight: 600;
+		background: var(--accent-soft);
+		border-color: #c7d2fe;
 	}
 
 	.content {
-		padding-top: 3.5rem;
-		padding-bottom: 5rem;
+		padding-top: clamp(2rem, 5vw, 4rem);
+		padding-bottom: clamp(2rem, 4vw, 3.5rem);
+	}
+
+	.footer {
+		padding-top: 1.25rem;
+		padding-bottom: 2.25rem;
+		border-top: 1px solid var(--border);
+	}
+
+	.footer p {
+		margin: 0;
+		font-size: 0.95rem;
 	}
 
 	h1,
@@ -123,12 +149,17 @@ const isProjects = currentPath === normalize(projectsHref);
 	}
 
 	h2 {
-		font-size: 1.4rem;
+		font-size: clamp(1.2rem, 3.5vw, 1.4rem);
 		margin-bottom: 0.75rem;
 	}
 
+	h3 {
+		font-size: 1.1rem;
+		margin-bottom: 0.6rem;
+	}
+
 	section {
-		margin-top: 3.25rem;
+		margin-top: clamp(2rem, 5vw, 3.25rem);
 	}
 
 	p {
@@ -156,6 +187,7 @@ const isProjects = currentPath === normalize(projectsHref);
 		padding: 1.1rem;
 		border: 1px solid var(--border);
 		border-radius: 0.5rem;
+		background: #fff;
 	}
 
 	.eyebrow {
@@ -167,5 +199,59 @@ const isProjects = currentPath === normalize(projectsHref);
 
 	.lead {
 		font-size: 1.1rem;
+	}
+
+	.hero {
+		display: grid;
+		grid-template-columns: 1.35fr 1fr;
+		gap: 1.5rem;
+		align-items: center;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid var(--border);
+	}
+
+	.hero-art {
+		border: 1px solid var(--border);
+		border-radius: 0.7rem;
+		padding: 0.75rem;
+		background: #f9fafb;
+	}
+
+	.badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+		margin-top: 0.75rem;
+	}
+
+	.badges span {
+		font-size: 0.87rem;
+		padding: 0.28rem 0.55rem;
+		border-radius: 999px;
+		border: 1px solid #dbe4ff;
+		background: #f8faff;
+		color: #22396f;
+	}
+
+	.cta-row {
+		display: flex;
+		gap: 0.75rem;
+		flex-wrap: wrap;
+		margin-top: 0.9rem;
+	}
+
+	.cta {
+		display: inline-block;
+		padding: 0.5rem 0.8rem;
+		border: 1px solid #c7d2fe;
+		border-radius: 0.45rem;
+		background: #f8faff;
+		font-weight: 600;
+	}
+
+	@media (max-width: 780px) {
+		.hero {
+			grid-template-columns: 1fr;
+		}
 	}
 </style>

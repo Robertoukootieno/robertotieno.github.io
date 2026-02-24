@@ -1,8 +1,1047 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import Readme from '../../README.md';
 ---
 
-<BaseLayout title="Robert Otieno | Portfolio Landing" description="Interim portfolio landing page sourced from README.">
-	<Readme />
+<BaseLayout title="Robert Otieno | Cybersecurity, Identity, & Enterprise IT Strategist" description="Designing secure, scalable, and privacy-first identity systems for the next generation of enterprises.">
+	<section class="hero-panel" id="top">
+		<div class="hero-grid-bg" aria-hidden="true"></div>
+		<div class="hero-content">
+			<p class="eyebrow">Cybersecurity · Identity · Enterprise IT</p>
+			<h1>Robert Otieno – Cybersecurity, Identity, & Enterprise IT Strategist</h1>
+			<p class="lead">Designing secure, scalable, and privacy-first identity systems for the next generation of enterprises.</p>
+			<div class="hero-actions">
+				<a class="primary-btn" href="#selected-works">View Works</a>
+				<a class="secondary-btn" href="#contact">Contact Me</a>
+			</div>
+		</div>
+		<div class="icon-cluster" aria-label="Technical focus areas">
+			<span class="cluster-item iam">IAM</span>
+			<span class="cluster-item iga">IGA</span>
+			<span class="cluster-item pam">PAM</span>
+			<span class="cluster-item dlt">DLT</span>
+			<span class="cluster-item ssi">SSI</span>
+		</div>
+	</section>
+
+	<section id="about-me">
+		<h2>About Me</h2>
+		<div class="about-layout">
+			<div class="about-visual" aria-hidden="true">
+			<div class="portrait" style="--portrait-image: url('https://via.placeholder.com/156x156?text=RO')">RO</div>
+			<p style="text-align: center; font-size: 0.85rem; color: #6b7280; margin-top: -0.5rem;">Replace with your photo URL</p>
+				<div class="badge-row">
+					<span>IAM</span>
+					<span>SSI</span>
+					<span>Privacy</span>
+					<span>DLT</span>
+					<span>Automation</span>
+				</div>
+			</div>
+			<div>
+				<p class="lead">Specializing in Identity & Access Management (IAM), Governance (IGA), and Privileged Access Management (PAM) for enterprise-grade systems.</p>
+				<p>I build security models that combine hands-on architecture with strategic governance, from enterprise IAM operations to decentralized identity ecosystems.</p>
+				<p>My SSI work includes practical integration experience with EBSI and walt.id, with a privacy engineering approach centered on minimization, selective disclosure, and auditability.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="expertise">
+		<h2>Core Expertise / Technical Pillars</h2>
+		<div class="pillars-grid">
+			<article class="pillar-card">
+				<div class="progress" style="--percent: 88; --tone: #1e3a8a;"><span>88%</span></div>
+				<h3>Identity & Access Management (IAM/IGA/PAM)</h3>
+				<ul>
+					<li>JML and RBAC design for enterprise workflows</li>
+					<li>SaaS integration: Azure AD / Entra ID, SailPoint</li>
+					<li>JWT and OpenID Connect architecture patterns</li>
+					<li>Privileged access controls and governance controls</li>
+				</ul>
+			</article>
+			<article class="pillar-card">
+				<div class="progress" style="--percent: 84; --tone: #d97706;"><span>84%</span></div>
+				<h3>Security & Privacy Engineering</h3>
+				<ul>
+					<li>Threat modeling and risk-informed control selection</li>
+					<li>Privacy by Design and GDPR-aligned architecture</li>
+					<li>ZKP and differential privacy exploration</li>
+					<li>Data lifecycle control and minimization strategy</li>
+				</ul>
+			</article>
+			<article class="pillar-card">
+				<div class="progress" style="--percent: 81; --tone: #059669;"><span>81%</span></div>
+				<h3>Distributed Ledger & Decentralized Infrastructure</h3>
+				<ul>
+					<li>SSI and Verifiable Credentials (VC DM 1.1/2.0)</li>
+					<li>EBSI and Hyperledger Besu PoA integration context</li>
+					<li>Credential issuance, verification, and disclosure flows</li>
+					<li>SSI-enabled employment verification architecture</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+	<section id="selected-works">
+		<h2>Selected Works / Case Studies</h2>
+		<div class="filter-row" role="tablist" aria-label="Case study filters">
+			<button class="filter-btn is-active" data-filter="all">All</button>
+			<button class="filter-btn" data-filter="iam">IAM</button>
+			<button class="filter-btn" data-filter="ssi">SSI</button>
+			<button class="filter-btn" data-filter="privacy">Privacy</button>
+			<button class="filter-btn" data-filter="itops">IT Ops</button>
+		</div>
+		<div class="works-grid">
+			<article class="work-card" data-tags="ssi privacy">
+				<p class="work-tag">SSI · Privacy</p>
+				<h3>Decentralized Employment Verification System</h3>
+				<p>SSI platform integration using EBSI and walt.id, with credential issuance, selective disclosure, and verification pipelines.</p>
+				<button class="work-btn" data-case="employment">Explore Full Case Study</button>
+			</article>
+			<article class="work-card" data-tags="iam itops">
+				<p class="work-tag">IAM · IT Ops</p>
+				<h3>Corporate IAM Modernization</h3>
+				<p>Enterprise IAM redesign covering RBAC, JML, and access automation for faster onboarding and stronger governance.</p>
+				<button class="work-btn" data-case="iam">Explore Full Case Study</button>
+			</article>
+			<article class="work-card" data-tags="privacy">
+				<p class="work-tag">Privacy Engineering</p>
+				<h3>Privacy Engineering Initiatives</h3>
+				<p>DPIA-led controls and risk-informed privacy architecture, including ZKP and differential privacy evaluation in sensitive flows.</p>
+				<button class="work-btn" data-case="privacy">Explore Full Case Study</button>
+			</article>
+			<article class="work-card" data-tags="itops">
+				<p class="work-tag">IT Ops</p>
+				<h3>Enterprise IT & Hybrid Collaboration Support</h3>
+				<p>Cross-platform lifecycle operations and enterprise-grade hybrid meeting room/AV support with governance alignment.</p>
+				<button class="work-btn" data-case="itops">Explore Full Case Study</button>
+			</article>
+		</div>
+	</section>
+
+	<section id="testimonials">
+		<h2>Testimonials / References</h2>
+		<div class="testimonials-grid">
+			<blockquote class="quote-card">
+				<p>“Robert’s SSI implementation strategy transformed our employment verification processes, reducing operational risk while enhancing privacy.”</p>
+				<cite>Enterprise IT Lead</cite>
+			</blockquote>
+			<blockquote class="quote-card">
+				<p>“A rare combination of IAM, IGA, and PAM expertise with strategic vision for security governance.”</p>
+				<cite>CIO</cite>
+			</blockquote>
+			<blockquote class="quote-card">
+				<p>“Robert consistently bridges board-level priorities with executable enterprise controls.”</p>
+				<cite>Security Program Director</cite>
+			</blockquote>
+		</div>
+		<div class="partner-row" aria-label="Technology ecosystem">
+			<span>Entra ID</span>
+			<span>SailPoint</span>
+			<span>EBSI</span>
+			<span>walt.id</span>
+			<span>Hyperledger Besu</span>
+		</div>
+	</section>
+
+	<section id="roadmap">
+		<h2>Future Aspirations / Technical Roadmap</h2>
+		<div class="timeline">
+			<article class="timeline-node iam-tone">
+				<h3>Advancing SSI & Decentralized Identity Solutions</h3>
+				<p>Enterprise-grade, user-centric identity systems with full control over personal data.</p>
+			</article>
+			<article class="timeline-node auto-tone">
+				<h3>Automation & Intelligent IT Operations</h3>
+				<p>AI-assisted automation for IAM, IT support, and compliance monitoring.</p>
+			</article>
+			<article class="timeline-node sec-tone">
+				<h3>Enterprise Privacy & Security Engineering</h3>
+				<p>Pioneer adoption of privacy-enhancing technologies and risk-informed security frameworks.</p>
+			</article>
+			<article class="timeline-node ssi-tone">
+				<h3>Thought Leadership</h3>
+				<p>Contribute to best practices in decentralized identity, secure ecosystems, and governance-aligned architecture.</p>
+			</article>
+		</div>
+	</section>
+
+	<section id="contact">
+		<h2>Contact & Connect</h2>
+		<div class="contact-layout">
+			<form class="contact-form">
+				<label>
+					Name
+					<input type="text" name="name" required />
+				</label>
+				<label>
+					Email
+					<input type="email" name="email" required />
+				</label>
+				<label>
+					Subject
+					<input type="text" name="subject" required />
+				</label>
+				<label>
+					Collaboration Type
+					<select name="collaboration">
+						<option>Advisory</option>
+						<option>Project</option>
+						<option>Speaking</option>
+						<option>Other</option>
+					</select>
+				</label>
+				<label class="full-width">
+					Message
+					<textarea name="message" rows="5" required></textarea>
+				</label>
+				<button type="submit" class="primary-btn">Send Message</button>
+			</form>
+			<aside class="connect-panel">
+				<h3>Quick Connect</h3>
+				<p>Open to collaborations, advisory roles, and innovative projects in identity, cybersecurity, and enterprise IT.</p>
+				<ul>
+					<li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">LinkedIn</a></li>
+					<li><a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a></li>
+					<li><a href="mailto:your.email@example.com">Email</a></li>
+				</ul>
+			</aside>
+		</div>
+	</section>
+
+	<section id="page-footer" class="footer-links-panel">
+		<nav aria-label="Homepage quick links">
+			<a href="#about-me">About</a>
+			<a href="#selected-works">Works</a>
+			<a href="#testimonials">Testimonials</a>
+			<a href="#roadmap">Timeline</a>
+			<a href="#contact">Contact</a>
+		</nav>
+		<p>© Robert Otieno, 2026 · IAM · IGA · PAM</p>
+	</section>
+
+	<div id="case-modal" class="modal" aria-hidden="true">
+		<div class="modal-backdrop" data-close="true"></div>
+		<div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+			<button class="modal-close" data-close="true" aria-label="Close case study">×</button>
+			<h3 id="modal-title"></h3>
+			<p id="modal-problem"></p>
+			<ul id="modal-points"></ul>
+		</div>
+	</div>
 </BaseLayout>
+
+<style>
+	.hero-panel {
+		position: relative;
+		overflow: hidden;
+		border: none;
+		border-radius: 0;
+		padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 3vw, 2rem);
+		margin: 0 calc(-1 * clamp(1rem, 3vw, 2rem));
+		background: linear-gradient(135deg, #1e3a8a 0%, #2d5a9e 50%, #1e5c99 100%);
+		color: #ffffff;
+		box-shadow: none;
+	}
+
+	.hero-grid-bg {
+		position: absolute;
+		inset: 0;
+		background-image:
+			linear-gradient(to right, rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+			linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+		background-size: 40px 40px;
+		animation: drift 20s linear infinite;
+		pointer-events: none;
+	}
+
+	@keyframes drift {
+		from {
+			transform: translateY(0);
+		}
+		to {
+			transform: translateY(34px);
+		}
+	}
+
+	.hero-content {
+		position: relative;
+		z-index: 2;
+		max-width: 720px;
+	}
+
+	.hero-content h1 {
+		color: #ffffff;
+		margin-bottom: 0.8rem;
+		line-height: 1.1;
+	}
+
+	.hero-content .eyebrow {
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	.hero-content .lead {
+		color: rgba(255, 255, 255, 0.9);
+		font-size: clamp(1rem, 2.2vw, 1.15rem);
+	}
+
+	.icon-cluster {
+		position: relative;
+		z-index: 2;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 0.7rem;
+		flex-wrap: wrap;
+		margin-top: 1rem;
+	}
+
+	.primary-btn,
+	.secondary-btn,
+	.work-btn {
+		padding: 0.68rem 1.4rem;
+		border-radius: 8px;
+		border: none;
+		font-weight: 600;
+		cursor: pointer;
+		font-size: 0.95rem;
+		transition: all 0.2s ease;
+	}
+
+	.primary-btn {
+		background: #ffffff;
+		color: #1e3a8a;
+		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.primary-btn:hover {
+		background: #f0f4ff;
+		text-decoration: none;
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		transform: translateY(-2px);
+	}
+
+	.secondary-btn {
+		background: rgba(255, 255, 255, 0.15);
+		color: #ffffff;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.secondary-btn:hover {
+		text-decoration: none;
+		background: rgba(255, 255, 255, 0.25);
+		border-color: rgba(255, 255, 255, 0.5);
+	}
+
+	.work-btn {
+		background: #f8faff;
+		color: #1e3a8a;
+	}
+
+	.work-btn:hover {
+		text-decoration: none;
+		background: #eef3ff;
+	}
+
+	.icon-cluster {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.6rem;
+		margin-top: 1.2rem;
+	}
+
+	.cluster-item {
+		padding: 0.42rem 0.85rem;
+		font-size: 0.87rem;
+		border-radius: 999px;
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		background: rgba(255, 255, 255, 0.12);
+		color: #ffffff;
+		animation: float 5s ease-in-out infinite;
+		font-weight: 500;
+	}
+
+	.cluster-item:nth-child(2) {
+		animation-delay: 0.3s;
+	}
+
+	.cluster-item:nth-child(3) {
+		animation-delay: 0.6s;
+	}
+
+	.cluster-item:nth-child(4) {
+		animation-delay: 0.9s;
+	}
+
+	.cluster-item:nth-child(5) {
+		animation-delay: 1.2s;
+	}
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-5px);
+		}
+	}
+
+	.iam {
+		border-color: #93c5fd;
+	}
+
+	.iga {
+		border-color: #bfdbfe;
+	}
+
+	.pam {
+		border-color: #c7d2fe;
+	}
+
+	.dlt {
+		border-color: #86efac;
+	}
+
+	.ssi {
+		border-color: #fde68a;
+	}
+
+	.about-layout {
+		display: grid;
+		grid-template-columns: 300px 1fr;
+		gap: 2.5rem;
+		align-items: start;
+	}
+
+	.about-visual {
+		padding: 1.5rem;
+		border: 1px solid var(--border);
+		border-radius: 16px;
+		background: #ffffff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	.portrait {
+		width: 180px;
+		height: 180px;
+		margin: 0 auto 1.2rem;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		font-size: 2.4rem;
+		font-weight: 700;
+		color: #1e3a8a;
+		background-image: var(--portrait-image);
+		background-size: cover;
+		background-position: center;
+		background-color: linear-gradient(180deg, #eaf0ff 0%, #ffffff 100%);
+		border: 4px solid #1e3a8a;
+		overflow: hidden;
+		box-shadow: 0 4px 16px rgba(30, 58, 138, 0.15);
+	}
+
+	.badge-row {
+		display: flex;
+		gap: 0.5rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.badge-row span {
+		padding: 0.23rem 0.5rem;
+		font-size: 0.8rem;
+		border-radius: 999px;
+		background: #f8faff;
+		border: 1px solid #dbe4ff;
+	}
+
+	.pillars-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.pillar-card {
+		border: 1px solid var(--border);
+		border-radius: 14px;
+		padding: 1.4rem;
+		background: #ffffff;
+		transition: all 0.3s ease;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	.pillar-card:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 12px 32px rgba(30, 58, 138, 0.12);
+		border-color: #1e3a8a;
+	}
+
+	.progress {
+		--percent: 80;
+		--tone: #1e3a8a;
+		width: 72px;
+		height: 72px;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		margin-bottom: 0.8rem;
+		background:
+			radial-gradient(closest-side, white 77%, transparent 80% 100%),
+			conic-gradient(var(--tone) calc(var(--percent) * 1%), #e5e7eb 0);
+	}
+
+	.progress span {
+		font-size: 0.8rem;
+		font-weight: 700;
+		color: #111827;
+	}
+
+	.filter-row {
+		display: flex;
+		gap: 0.55rem;
+		flex-wrap: wrap;
+		margin-bottom: 1rem;
+	}
+
+	.filter-btn {
+		padding: 0.5rem 1rem;
+		border-radius: 999px;
+		border: 1.5px solid #d1d5db;
+		background: #ffffff;
+		cursor: pointer;
+		font-weight: 500;
+		transition: all 0.2s ease;
+	}
+
+	.filter-btn:hover {
+		border-color: #1e3a8a;
+		color: #1e3a8a;
+	}
+
+	.filter-btn.is-active {
+		background: #1e3a8a;
+		border-color: #1e3a8a;
+		color: #ffffff;
+		box-shadow: 0 2px 8px rgba(30, 58, 138, 0.3);
+	}
+
+	.works-grid {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.work-card {
+		border: 1px solid var(--border);
+		border-radius: 14px;
+		padding: 1.4rem;
+		background: #ffffff;
+		transition: all 0.3s ease;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	.work-card:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 20px rgba(30, 58, 138, 0.1);
+	}
+
+	.work-card.is-hidden {
+		display: none;
+	}
+
+	.work-tag {
+		font-size: 0.82rem;
+		font-weight: 600;
+		color: #1e3a8a;
+	}
+
+	.testimonials-grid {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1rem;
+	}
+
+	.quote-card {
+		margin: 0;
+		padding: 1.4rem;
+		border-radius: 14px;
+		border: 1px solid var(--border);
+		background: #ffffff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+		transition: all 0.3s ease;
+	}
+
+	.quote-card:hover {
+		box-shadow: 0 8px 20px rgba(30, 58, 138, 0.08);
+	}
+
+	.quote-card cite {
+		display: block;
+		margin-top: 0.6rem;
+		font-style: normal;
+		font-weight: 600;
+		color: #374151;
+	}
+
+	.partner-row {
+		display: flex;
+		gap: 0.6rem;
+		flex-wrap: wrap;
+		margin-top: 0.9rem;
+	}
+
+	.partner-row span {
+		padding: 0.3rem 0.55rem;
+		border-radius: 8px;
+		border: 1px solid var(--border);
+		font-size: 0.82rem;
+	}
+
+	.timeline {
+		display: grid;
+		gap: 0.8rem;
+		position: relative;
+	}
+
+	.timeline::before {
+		content: '';
+		position: absolute;
+		left: 9px;
+		top: 12px;
+		bottom: 12px;
+		width: 2px;
+		background: #dbe4ff;
+	}
+
+	.timeline-node {
+		position: relative;
+		margin-left: 1.4rem;
+		padding: 1rem;
+		border: 1px solid var(--border);
+		border-radius: 12px;
+		background: #ffffff;
+		transition: all 0.3s ease;
+	}
+
+	.timeline-node:hover {
+		transform: translateX(4px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	}
+
+	.timeline-node::before {
+		content: '';
+		position: absolute;
+		left: -1.08rem;
+		top: 1.2rem;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: currentColor;
+	}
+
+	.iam-tone {
+		color: #1e3a8a;
+	}
+
+	.ssi-tone {
+		color: #059669;
+	}
+
+	.sec-tone {
+		color: #d97706;
+	}
+
+	.auto-tone {
+		color: #7c3aed;
+	}
+
+	.primary-btn,
+	.secondary-btn {
+		padding: 0.75rem 1.25rem;
+		border-radius: 8px;
+		border: none;
+		font-weight: 600;
+		font-size: 0.95rem;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.primary-btn {
+		background: #ffffff;
+		color: #1e3a8a;
+		box-shadow: 0 2px 8px rgba(30, 58, 138, 0.15);
+	}
+
+	.primary-btn:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 16px rgba(30, 58, 138, 0.25);
+	}
+
+	.secondary-btn {
+		border: 1.5px solid rgba(255, 255, 255, 0.4);
+		background: rgba(255, 255, 255, 0.1);
+		color: #ffffff;
+	}
+
+	.secondary-btn:hover {
+		transform: translateY(-2px);
+		border-color: rgba(255, 255, 255, 0.6);
+		background: rgba(255, 255, 255, 0.15);
+	}
+
+	.work-btn {
+		padding: 0.5rem 0.9rem;
+		border-radius: 6px;
+		border: 1px solid #dbe4ff;
+		background: #f8faff;
+		color: #1e3a8a;
+		font-weight: 600;
+		font-size: 0.9rem;
+		cursor: pointer;
+		transition: all 0.2s ease;
+	}
+
+	.work-btn:hover {
+		background: #dbe4ff;
+		border-color: #1e3a8a;
+		transform: translateY(-1px);
+	}
+
+	.contact-layout {
+		display: grid;
+		grid-template-columns: 1.4fr 1fr;
+		gap: 1rem;
+	}
+
+	.contact-form {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0.75rem;
+	}
+
+	.contact-form label {
+		display: grid;
+		gap: 0.35rem;
+		font-size: 0.9rem;
+		color: #334155;
+	}
+
+	.contact-form input,
+	.contact-form select,
+	.contact-form textarea {
+		padding: 0.75rem;
+		border-radius: 8px;
+		border: 1.5px solid #d1d5db;
+		font: inherit;
+		transition: all 0.2s ease;
+	}
+
+	.contact-form input:focus,
+	.contact-form select:focus,
+	.contact-form textarea:focus {
+		outline: none;
+		border-color: #1e3a8a;
+		box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+	}
+
+	.contact-form .full-width {
+		grid-column: 1 / -1;
+	}
+
+	.connect-panel {
+		border: 1px solid var(--border);
+		border-radius: 12px;
+		padding: 1.2rem;
+		background: #ffffff;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	}
+
+	.connect-panel h4 {
+		margin: 0 0 0.75rem 0;
+		font-size: 1rem;
+		color: #0f172a;
+	}
+
+	.connect-panel ul {
+		margin: 0;
+		padding-left: 1.2rem;
+	}
+
+	.connect-panel li {
+		margin-bottom: 0.5rem;
+		font-size: 0.9rem;
+		color: #334155;
+	}
+
+	.footer-links-panel {
+		border-top: 1px solid var(--border);
+		padding-top: 1.3rem;
+	}
+
+	.footer-links-panel nav {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		margin-bottom: 0.6rem;
+	}
+
+	.modal {
+		position: fixed;
+		inset: 0;
+		display: none;
+		z-index: 40;
+	}
+
+	.modal.is-open {
+		display: block;
+	}
+
+	.modal-backdrop {
+		position: absolute;
+		inset: 0;
+		background: rgba(15, 23, 42, 0.55);
+	}
+
+	.modal-card {
+		position: relative;
+		max-width: 650px;
+		margin: 8vh auto;
+		background: #ffffff;
+		border: 1px solid var(--border);
+		border-radius: 14px;
+		padding: 1.5rem;
+		z-index: 2;
+		box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+	}
+
+	.modal-card h3 {
+		margin: 0 0 1rem 0;
+		font-size: 1.2rem;
+		color: #0f172a;
+	}
+
+	.modal-card h4 {
+		margin: 1rem 0 0.5rem 0;
+		font-size: 1rem;
+		color: #1e3a8a;
+	}
+
+	.modal-card p {
+		margin: 0 0 0.75rem 0;
+		font-size: 0.95rem;
+		line-height: 1.6;
+		color: #334155;
+	}
+
+	.modal-card ul {
+		margin: 0;
+		padding-left: 1.2rem;
+		color: #334155;
+	}
+
+	.modal-card li {
+		margin-bottom: 0.5rem;
+		font-size: 0.95rem;
+	}
+
+	.modal-close {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+		font-size: 1.3rem;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+	}
+
+	@media (max-width: 980px) {
+		.pillars-grid,
+		.testimonials-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.works-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.contact-layout {
+			grid-template-columns: 1fr;
+		}
+
+		.hero-content {
+			margin-bottom: 1.2rem;
+		}
+	}
+
+	@media (max-width: 880px) {
+		.about-layout {
+			grid-template-columns: 1fr;
+		}
+
+		.pillars-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.testimonials-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+
+		.contact-form {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	@media (max-width: 760px) {
+		.about-layout {
+			grid-template-columns: 1fr;
+		}
+
+		.contact-form {
+			grid-template-columns: 1fr;
+		}
+
+		.pillars-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.testimonials-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.works-grid {
+			grid-template-columns: 1fr;
+		}
+
+		h1 {
+			font-size: clamp(1.6rem, 5vw, 2.7rem);
+		}
+
+		.hero-actions {
+			flex-direction: column;
+		}
+
+		.primary-btn,
+		.secondary-btn,
+		.work-btn {
+			width: 100%;
+			text-align: center;
+		}
+
+		.footer-links-panel nav {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+	}
+
+	@media (max-width: 520px) {
+		.hero-panel {
+			border-radius: 10px;
+		}
+
+		.modal-card {
+			margin: 1rem 0.5rem;
+			max-width: calc(100% - 1rem);
+		}
+
+		section {
+			margin-top: 2rem;
+		}
+	}
+</style>
+
+<script is:inline>
+	const filterButtons = Array.from(document.querySelectorAll('.filter-btn'));
+	const workCards = Array.from(document.querySelectorAll('.work-card'));
+
+	filterButtons.forEach((button) => {
+		button.addEventListener('click', () => {
+			const filter = button.dataset.filter || 'all';
+			filterButtons.forEach((item) => item.classList.remove('is-active'));
+			button.classList.add('is-active');
+
+			workCards.forEach((card) => {
+				const tags = card.getAttribute('data-tags') || '';
+				const visible = filter === 'all' || tags.includes(filter);
+				card.classList.toggle('is-hidden', !visible);
+			});
+		});
+	});
+
+	const modal = document.getElementById('case-modal');
+	const modalTitle = document.getElementById('modal-title');
+	const modalProblem = document.getElementById('modal-problem');
+	const modalPoints = document.getElementById('modal-points');
+
+	const caseStudies = {
+		employment: {
+			title: 'Decentralized Employment Verification System',
+			problem: 'Built a privacy-preserving SSI employment verification model for multi-party enterprise workflows.',
+			points: [
+				'SSI platform integration with EBSI and walt.id',
+				'Credential lifecycle: issuance, selective disclosure, verification',
+				'Microservice boundaries for issuer, holder, and verifier domains',
+				'Governance model for compliance and operational scalability',
+			],
+		},
+		iam: {
+			title: 'Corporate IAM Modernization',
+			problem: 'Redesigned IAM lifecycle patterns for better access governance and reduced provisioning friction.',
+			points: [
+				'RBAC model rationalization and JML alignment',
+				'Automation of access provisioning workflows',
+				'Integration strategy across enterprise SaaS applications',
+				'Improved audit traceability and governance consistency',
+			],
+		},
+		privacy: {
+			title: 'Privacy Engineering Initiatives',
+			problem: 'Introduced privacy-by-design controls in enterprise identity and data handling workflows.',
+			points: [
+				'DPIA-supported privacy risk assessments',
+				'Data minimization and retention control patterns',
+				'ZKP and differential privacy feasibility analysis',
+				'Risk-informed alignment with governance controls',
+			],
+		},
+		itops: {
+			title: 'Enterprise IT & Hybrid Collaboration Support',
+			problem: 'Stabilized hybrid enterprise operations with governance-aligned IT and AV support models.',
+			points: [
+				'Cross-platform lifecycle standardization',
+				'Operational runbooks for hybrid room technologies',
+				'Identity-aware endpoint governance alignment',
+				'Performance and service reliability improvements',
+			],
+		},
+	};
+
+	const openButtons = document.querySelectorAll('.work-btn');
+	openButtons.forEach((button) => {
+		button.addEventListener('click', () => {
+			const key = button.getAttribute('data-case');
+			if (!key || !caseStudies[key]) return;
+
+			const detail = caseStudies[key];
+			if (!modal || !modalTitle || !modalProblem || !modalPoints) return;
+
+			modalTitle.textContent = detail.title;
+			modalProblem.textContent = detail.problem;
+			modalPoints.innerHTML = detail.points.map((point) => `<li>${point}</li>`).join('');
+
+			modal.classList.add('is-open');
+			modal.setAttribute('aria-hidden', 'false');
+		});
+	});
+
+	if (modal) {
+		modal.addEventListener('click', (event) => {
+			const target = event.target;
+			if (!(target instanceof HTMLElement)) return;
+			if (target.dataset.close !== 'true') return;
+
+			modal.classList.remove('is-open');
+			modal.setAttribute('aria-hidden', 'true');
+		});
+	}
+</script>

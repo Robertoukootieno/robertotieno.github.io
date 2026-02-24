@@ -2,15 +2,35 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const baseUrl = import.meta.env.BASE_URL;
+const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <BaseLayout title="Portfolio | Robert Otieno" description="Enterprise Identity, Security & IT Operations portfolio by Robert Otieno.">
-	<section>
+	<section class="hero" style="margin-top: 0;">
+		<div>
 		<p class="eyebrow">Enterprise Identity, Security & IT Operations</p>
 		<h1>Robert Otieno</h1>
 		<p class="lead">Enterprise Identity, Security & IT Operations Architect</p>
 		<p class="lead">Designing privacy-engineered, automation-driven trust infrastructure for modern enterprises.</p>
 		<p>Specializing in Identity & Access Management, Zero Trust architecture, enterprise IT operations, and decentralized identity systems.</p>
+		<div class="cta-row">
+			<a class="cta" href={`${basePath}projects/`}>Selected Projects</a>
+			<a class="cta" href={`${basePath}about/`}>About Approach</a>
+		</div>
+		</div>
+		<div class="hero-art" aria-hidden="true">
+			<svg viewBox="0 0 420 280" width="100%">
+				<rect x="24" y="24" width="372" height="232" rx="10" fill="#ffffff" stroke="#cbd5e1" />
+				<rect x="44" y="44" width="148" height="52" rx="8" fill="#f8faff" stroke="#1e3a8a" />
+				<rect x="212" y="44" width="164" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+				<rect x="44" y="116" width="332" height="52" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+				<rect x="44" y="188" width="332" height="48" rx="8" fill="#ffffff" stroke="#cbd5e1" />
+				<text x="58" y="75" fill="#1e3a8a" font-size="13">Identity Architecture</text>
+				<text x="224" y="75" fill="#1f2937" font-size="13">Operational Security</text>
+				<text x="58" y="146" fill="#1f2937" font-size="13">Access Governance · Zero Trust · Privacy Engineering</text>
+				<text x="58" y="217" fill="#1f2937" font-size="13">Enterprise-scale Automation and Auditability</text>
+			</svg>
+		</div>
 	</section>
 
 	<section>
@@ -115,7 +135,7 @@ const baseUrl = import.meta.env.BASE_URL;
 	<section>
 		<h2>Writing</h2>
 		<p>Essays and technical notes are published under the writings section as this portfolio evolves.</p>
-		<p><a href={`${baseUrl}projects/`}>See project architecture details</a> and <a href={`${baseUrl}about/`}>read more about my systems approach</a>.</p>
+		<p><a href={`${basePath}projects/`}>See project architecture details</a> and <a href={`${basePath}about/`}>read more about my systems approach</a>.</p>
 	</section>
 
 	<section>
