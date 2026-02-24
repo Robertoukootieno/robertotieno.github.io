@@ -6,32 +6,60 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 ---
 
 <BaseLayout title="About | Robert Otieno" description="About Robert Otieno, Enterprise Identity, Security & IT Operations Architect.">
-	<section class="hero" style="margin-top: 0;">
-		<div>
-		<p class="eyebrow">About</p>
-		<h1>Architecting Trust Infrastructure for Enterprise Systems</h1>
-		<p class="lead">
-			I work at the intersection of identity architecture, operational security, and privacy engineering to design resilient enterprise systems.
-		</p>
-		<p>
-			My approach treats identity as infrastructure: access decisions must be measurable, governance must be operationally integrated, and privacy
-			must be embedded into the architecture from the start.
-		</p>
-		<div class="cta-row">
-			<a class="cta" href={`${basePath}projects/`}>View Projects</a>
-			<a class="cta" href={`${basePath}portfolio/`}>View Portfolio</a>
-		</div>
-		</div>
-		<div class="hero-art" aria-hidden="true">
-			<svg viewBox="0 0 420 280" width="100%">
-				<circle cx="90" cy="88" r="38" fill="#f8faff" stroke="#1e3a8a" />
-				<circle cx="210" cy="88" r="38" fill="#ffffff" stroke="#94a3b8" />
-				<circle cx="330" cy="88" r="38" fill="#ffffff" stroke="#94a3b8" />
-				<rect x="50" y="170" width="320" height="66" rx="9" fill="#ffffff" stroke="#cbd5e1" />
-				<path d="M128 88 H172" stroke="#1e3a8a" stroke-width="2" />
-				<path d="M248 88 H292" stroke="#1e3a8a" stroke-width="2" />
-				<text x="61" y="208" fill="#1f2937" font-size="13">Identity · Operations · Privacy · Automation</text>
-			</svg>
+	<section class="profile-section">
+		<div class="profile-container">
+			<div class="profile-header">
+				<h1>Robert Otieno</h1>
+				<p class="profile-title">Enterprise Identity, Security & IT Operations Architect</p>
+				<div class="profile-meta">
+					<span class="meta-item">📍 Copenhagen, Denmark</span>
+					<span class="meta-item">🇰🇪 Kenyan</span>
+					<span class="meta-item">⚡ Age 32</span>
+				</div>
+			</div>
+
+			<div class="profile-grid">
+				<div class="profile-bio">
+					<h2>About Me</h2>
+					<p>
+						I'm a tech-passionate architect and security engineer from Nyakach, Kisumu County, Kenya. My journey has taken me from playing football at a competitive level to designing enterprise-grade identity and security systems. Though I've traded the pitch for engineering, I remain a dedicated Manchester United fan and still enjoy football whenever possible—it keeps me grounded and reminds me of the value of teamwork and resilience.
+					</p>
+					<p>
+						My transition into technology began when I moved to Denmark as a research assistant, where I discovered a deep interest in identity architecture, zero-trust security principles, and privacy-engineered systems. I now work at the intersection of enterprise governance, operational security, and emerging identity standards, helping organizations build trust infrastructure that balances security, privacy, and automation.
+					</p>
+					<p>
+						I approach every challenge with the same discipline and determination I developed through football: systematic problem-solving, continuous improvement, and a focus on building systems that scale. My unique perspective—blending cultural diversity, technical depth, and practical operational experience—informs how I design secure, resilient, and human-centered enterprise systems.
+					</p>
+				</div>
+
+				<div class="profile-education">
+					<h2>Education & Background</h2>
+					<div class="education-item">
+						<h3>Research Assistant</h3>
+						<p class="education-meta">Denmark · Early Career</p>
+						<p>Initial transition into technology, exploring research in [field of focus], establishing foundation in [key research area].</p>
+					</div>
+					<div class="education-item">
+						<h3>University/Degree</h3>
+						<p class="education-meta">[Institution] · [Year]</p>
+						<p>Major: [Your degree field]. Key focus areas: [relevant coursework or specializations].</p>
+					</div>
+					<div class="education-item">
+						<h3>Professional Certifications</h3>
+						<ul>
+							<li>CISSP (Certified Information Systems Security Professional) - [Year]</li>
+							<li>Additional certifications and credentials - [Add your certs here]</li>
+						</ul>
+					</div>
+					<h3 style="margin-top: 1.5rem; color: #1e3a8a;">Interests & Passions</h3>
+					<ul style="list-style: none; padding: 0; margin-top: 0.8rem;">
+						<li>⚽ Football enthusiast & Manchester United supporter</li>
+						<li>🔐 Enterprise security and identity architecture</li>
+						<li>🚀 Technology innovation and emerging standards</li>
+						<li>🌍 Building resilient systems for global enterprises</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 
@@ -65,3 +93,201 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 		</p>
 	</section>
 </BaseLayout>
+
+<style>
+	.profile-section {
+		background: linear-gradient(135deg, #f8faff 0%, #ffffff 100%);
+		border-radius: 12px;
+		padding: clamp(1.5rem, 5vw, 2.5rem);
+		margin-bottom: 2rem;
+		border: 1px solid #e0e7ff;
+	}
+
+	.profile-container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.profile-header {
+		text-align: center;
+		margin-bottom: 2.5rem;
+		padding-bottom: 2rem;
+		border-bottom: 2px solid #1e3a8a;
+	}
+
+	.profile-header h1 {
+		font-size: clamp(2rem, 5vw, 3rem);
+		color: #0f172a;
+		margin: 0 0 0.5rem 0;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+	}
+
+	.profile-title {
+		font-size: 1.1rem;
+		color: #1e3a8a;
+		font-weight: 600;
+		margin: 0 0 1rem 0;
+	}
+
+	.profile-meta {
+		display: flex;
+		justify-content: center;
+		gap: 1.5rem;
+		flex-wrap: wrap;
+	}
+
+	.meta-item {
+		font-size: 0.95rem;
+		color: #475569;
+		font-weight: 500;
+	}
+
+	.profile-grid {
+		display: grid;
+		grid-template-columns: 1.2fr 1fr;
+		gap: 2.5rem;
+	}
+
+	.profile-bio h2,
+	.profile-education h2 {
+		font-size: 1.5rem;
+		color: #0f172a;
+		margin: 0 0 1.2rem 0;
+		font-weight: 700;
+		border-bottom: 2px solid #1e3a8a;
+		padding-bottom: 0.5rem;
+	}
+
+	.profile-bio p {
+		font-size: 0.95rem;
+		line-height: 1.7;
+		color: #334155;
+		margin-bottom: 1.2rem;
+	}
+
+	.profile-bio p:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.education-item {
+		margin-bottom: 1.8rem;
+	}
+
+	.education-item h3 {
+		font-size: 1rem;
+		color: #0f172a;
+		margin: 0 0 0.4rem 0;
+		font-weight: 700;
+	}
+
+	.education-meta {
+		font-size: 0.85rem;
+		color: #1e3a8a;
+		font-weight: 600;
+		margin: 0 0 0.6rem 0;
+	}
+
+	.education-item p {
+		font-size: 0.9rem;
+		color: #475569;
+		line-height: 1.6;
+		margin: 0;
+	}
+
+	.education-item ul {
+		list-style: none;
+		padding: 0;
+		margin: 0.6rem 0 0 0;
+	}
+
+	.education-item ul li {
+		font-size: 0.9rem;
+		color: #334155;
+		padding-left: 1.5rem;
+		margin-bottom: 0.5rem;
+		position: relative;
+	}
+
+	.education-item ul li::before {
+		content: "✓";
+		position: absolute;
+		left: 0;
+		color: #1e3a8a;
+		font-weight: bold;
+	}
+
+	.profile-education h3 {
+		font-size: 1rem;
+		color: #1e3a8a;
+		margin: 1.5rem 0 0.8rem 0;
+		font-weight: 700;
+	}
+
+	.profile-education ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.profile-education ul li {
+		font-size: 0.9rem;
+		color: #334155;
+		padding-left: 1.8rem;
+		margin-bottom: 0.6rem;
+		position: relative;
+		line-height: 1.5;
+	}
+
+	.profile-education ul li::before {
+		content: "→";
+		position: absolute;
+		left: 0;
+		color: #1e3a8a;
+		font-weight: bold;
+	}
+
+	@media (max-width: 900px) {
+		.profile-grid {
+			grid-template-columns: 1fr;
+			gap: 2rem;
+		}
+
+		.profile-meta {
+			flex-direction: column;
+			gap: 0.8rem;
+		}
+
+		.profile-header h1 {
+			font-size: 1.8rem;
+		}
+	}
+
+	@media (max-width: 600px) {
+		.profile-section {
+			padding: 1rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.profile-header {
+			margin-bottom: 1.8rem;
+			padding-bottom: 1.5rem;
+		}
+
+		.profile-header h1 {
+			font-size: 1.5rem;
+		}
+
+		.profile-title {
+			font-size: 0.95rem;
+		}
+
+		.profile-meta {
+			gap: 0.8rem;
+		}
+
+		.meta-item {
+			font-size: 0.85rem;
+		}
+	}
+</style>
