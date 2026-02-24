@@ -8,6 +8,20 @@ const {
 	title = 'Robert Otieno | Enterprise Identity, Security & IT Operations Architect',
 	description = 'Enterprise Identity, Security & IT Operations Architect focused on privacy-engineered, automation-driven trust infrastructure.',
 } = Astro.props;
+
+const baseUrl = import.meta.env.BASE_URL;
+const normalize = (value: string) => value.replace(/\/+$/, '') || '/';
+const currentPath = normalize(Astro.url.pathname);
+
+const homeHref = baseUrl;
+const portfolioHref = `${baseUrl}portfolio/`;
+const aboutHref = `${baseUrl}about/`;
+const projectsHref = `${baseUrl}projects/`;
+
+const isHome = currentPath === normalize(homeHref);
+const isPortfolio = currentPath === normalize(portfolioHref);
+const isAbout = currentPath === normalize(aboutHref);
+const isProjects = currentPath === normalize(projectsHref);
 ---
 
 <!doctype html>
@@ -24,9 +38,10 @@ const {
 	<body>
 		<header>
 			<nav class="container nav">
-				<a href="/" aria-current={Astro.url.pathname === '/' ? 'page' : undefined}>Home</a>
-				<a href="/about" aria-current={Astro.url.pathname === '/about' ? 'page' : undefined}>About</a>
-				<a href="/projects" aria-current={Astro.url.pathname === '/projects' ? 'page' : undefined}>Projects</a>
+				<a href={homeHref} aria-current={isHome ? 'page' : undefined}>Home</a>
+				<a href={portfolioHref} aria-current={isPortfolio ? 'page' : undefined}>Portfolio</a>
+				<a href={aboutHref} aria-current={isAbout ? 'page' : undefined}>About</a>
+				<a href={projectsHref} aria-current={isProjects ? 'page' : undefined}>Projects</a>
 			</nav>
 		</header>
 		<main class="container content">

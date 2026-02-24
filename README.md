@@ -1,46 +1,56 @@
-# Astro Starter Kit: Basics
+# Robert Otieno
 
-```sh
-npm create astro@latest -- --template basics
-```
+Enterprise Identity, Security & IT Operations Architect
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Designing privacy-engineered, automation-driven trust infrastructure for modern enterprises.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## Core Expertise
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+- Identity & Access Management architecture
+- Zero Trust strategy and implementation
+- Enterprise IT operations and governance integration
+- Privacy engineering and decentralized identity systems
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Selected Work
 
-## 🧞 Commands
+### Decentralized Employment Verification System
 
-All commands are run from the root of the project, from a terminal:
+Architected a trust-based employment verification system using Verifiable Credentials and decentralized identity infrastructure.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Focus areas:
 
-## 👀 Want to learn more?
+- Trust framework modeling
+- Credential lifecycle architecture
+- Selective disclosure mechanisms
+- Governance and compliance alignment
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Enterprise IAM & Access Governance Optimization
+
+Led architecture improvements in identity lifecycle workflows and access governance operations.
+
+Impact areas:
+
+- Reduced manual provisioning effort
+- Strengthened access review reliability
+- Improved governance consistency and audit readiness
+
+## Writing & Research
+
+- Why Zero Trust Fails Without Operational Integration
+- Identity as Enterprise Infrastructure
+- Privacy Engineering in IAM Systems
+- The Practical Limits of Decentralized Identity in Enterprises
+
+## Portfolio Pages
+
+- Full portfolio: [portfolio](portfolio/)
+- About: [about](about/)
+- Projects: [projects](projects/)
+
+## Contact
+
+- LinkedIn: [Your LinkedIn URL](https://www.linkedin.com/in/your-linkedin)
+- GitHub: [Your GitHub URL](https://github.com/yourusername)
+- Email: [Your Professional Email](mailto:your.email@example.com)
