@@ -174,7 +174,7 @@ import robertImage from '../assets/robert.jpeg';
 	<section id="contact">
 		<h2>Contact & Connect</h2>
 		<div class="contact-layout">
-			<form class="contact-form">
+			<form id="contact-form" class="contact-form" action="https://formspree.io/f/xykdlzro" method="POST">
 				<label>
 					Name
 					<input type="text" name="name" required />
@@ -200,15 +200,17 @@ import robertImage from '../assets/robert.jpeg';
 					Message
 					<textarea name="message" rows="5" required></textarea>
 				</label>
+				<input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
 				<button type="submit" class="primary-btn">Send Message</button>
+				<p id="form-status" class="form-status" role="status" aria-live="polite"></p>
 			</form>
 			<aside class="connect-panel">
 				<h3>Quick Connect</h3>
 				<p>Open to collaborations, advisory roles, and innovative projects in identity, cybersecurity, and enterprise IT.</p>
 				<ul>
-					<li><a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">LinkedIn</a></li>
-					<li><a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a></li>
-					<li><a href="mailto:your.email@example.com">Email</a></li>
+					<li><a href="https://www.linkedin.com/in/robert-otieno-ouko/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+					<li><a href="https://github.com/Robertoukootieno?tab=repositories" target="_blank" rel="noreferrer">GitHub</a></li>
+					<li><a href="mailto:robertotieno02@gmail.com">Email</a></li>
 				</ul>
 			</aside>
 		</div>
@@ -221,7 +223,7 @@ import robertImage from '../assets/robert.jpeg';
 			<a href="#roadmap">Timeline</a>
 			<a href="#contact">Contact</a>
 		</nav>
-		<p>© Robert Otieno, 2026 · IAM · IGA · PAM</p>
+		<p>© Robert Otieno, 2026 · Trust the process</p>
 	</section>
 
 	<div id="case-modal" class="modal" aria-hidden="true">
@@ -771,6 +773,13 @@ import robertImage from '../assets/robert.jpeg';
 		grid-column: 1 / -1;
 	}
 
+	.form-status {
+		margin-top: 0.35rem;
+		font-size: 0.9rem;
+		color: #334155;
+		grid-column: 1 / -1;
+	}
+
 	.connect-panel {
 		border: 1px solid var(--border);
 		border-radius: 12px;
@@ -1056,6 +1065,41 @@ import robertImage from '../assets/robert.jpeg';
 
 			modal.classList.remove('is-open');
 			modal.setAttribute('aria-hidden', 'true');
+		});
+	}
+
+	const contactForm = document.getElementById('contact-form');
+	const formStatus = document.getElementById('form-status');
+
+	if (contactForm instanceof HTMLFormElement) {
+		contactForm.addEventListener('submit', async (event) => {
+			event.preventDefault();
+
+			const submitButton = contactForm.querySelector('button[type="submit"]');
+			if (!(submitButton instanceof HTMLButtonElement)) return;
+
+			submitButton.disabled = true;
+			submitButton.textContent = 'Sending...';
+			if (formStatus) formStatus.textContent = '';
+
+			try {
+				const formData = new FormData(contactForm);
+				const response = await fetch(contactForm.action, {
+					method: 'POST',
+					body: formData,
+					headers: { Accept: 'application/json' },
+				});
+
+				if (!response.ok) throw new Error('Submit failed');
+
+				contactForm.reset();
+				if (formStatus) formStatus.textContent = 'Message sent successfully.';
+			} catch {
+				if (formStatus) formStatus.textContent = 'Failed to send message. Please try again.';
+			} finally {
+				submitButton.disabled = false;
+				submitButton.textContent = 'Send Message';
+			}
 		});
 	}
 </script>
