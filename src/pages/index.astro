@@ -1,11 +1,125 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<BaseLayout>
+	<section>
+		<p class="eyebrow">Enterprise Identity, Security & IT Operations</p>
+		<h1>Robert Otieno</h1>
+		<p class="lead">Enterprise Identity, Security & IT Operations Architect</p>
+		<p class="lead">Designing privacy-engineered, automation-driven trust infrastructure for modern enterprises.</p>
+		<p>Specializing in Identity & Access Management, Zero Trust architecture, enterprise IT operations, and decentralized identity systems.</p>
+	</section>
+
+	<section>
+		<h2>How I Think About Enterprise Security</h2>
+		<p>Enterprise security is not a collection of tools. It is a system.</p>
+		<p>
+			Identity is the control plane. Operations is the execution layer. Privacy is an architectural constraint — not an afterthought.
+			Automation is the scaling mechanism.
+		</p>
+		<p>
+			I design systems where identity, governance, and operational security work as a unified trust infrastructure. My focus is not only
+			enforcing access, but engineering environments where access decisions are measurable, auditable, and resilient.
+		</p>
+	</section>
+
+	<section>
+		<h2>Core Expertise</h2>
+		<div class="grid">
+			<article class="card">
+				<h3>Identity & Access Architecture</h3>
+				<ul>
+					<li>Enterprise IAM design and optimization</li>
+					<li>Entra ID implementation and governance</li>
+					<li>Zero Trust architecture principles</li>
+					<li>Authentication and authorization system design</li>
+					<li>Access lifecycle and role governance</li>
+				</ul>
+			</article>
+			<article class="card">
+				<h3>Enterprise IT Operations</h3>
+				<ul>
+					<li>Operational security integration</li>
+					<li>Endpoint and device governance alignment</li>
+					<li>Identity-aware infrastructure controls</li>
+					<li>Change and incident management alignment</li>
+					<li>Automation-driven operational workflows</li>
+				</ul>
+			</article>
+			<article class="card">
+				<h3>Digital Identity & Privacy Engineering</h3>
+				<ul>
+					<li>Self-Sovereign Identity (SSI) architectures</li>
+					<li>Verifiable Credentials (W3C data model)</li>
+					<li>Privacy-by-design system modeling</li>
+					<li>Trust frameworks and decentralized identity infrastructure</li>
+					<li>Compliance-aware identity system design</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+	<section>
+		<h2>Selected Work</h2>
+		<article class="card">
+			<h3>Decentralized Employment Verification System</h3>
+			<p>Designed a privacy-centric employment verification platform leveraging Verifiable Credentials and decentralized trust infrastructure.</p>
+			<ul>
+				<li>Trust framework modeling</li>
+				<li>Credential lifecycle architecture</li>
+				<li>Selective disclosure mechanisms</li>
+				<li>Governance and compliance alignment</li>
+				<li>Microservice-based identity architecture</li>
+			</ul>
+			<p>This project explores how decentralized identity can integrate into enterprise-grade environments while maintaining auditability and operational scalability.</p>
+		</article>
+		<article class="card" style="margin-top: 1rem;">
+			<h3>Enterprise IAM & Access Governance Optimization</h3>
+			<p>Led architectural improvements across identity lifecycle management and operational access governance.</p>
+			<ul>
+				<li>Reduced manual access provisioning workflows</li>
+				<li>Strengthened access review processes</li>
+				<li>Integrated identity governance into operational controls</li>
+				<li>Improved alignment between IAM and IT operations</li>
+			</ul>
+			<p>The objective was not just compliance — but sustainable, automation-driven governance.</p>
+		</article>
+	</section>
+
+	<section>
+		<h2>Thought Leadership</h2>
+		<p>I write and research at the intersection of identity, operations, and trust infrastructure.</p>
+		<ul>
+			<li>Why Zero Trust Fails Without Operational Integration</li>
+			<li>Identity as Enterprise Infrastructure</li>
+			<li>Privacy Engineering in IAM Systems</li>
+			<li>The Practical Limits of Decentralized Identity in Enterprises</li>
+		</ul>
+		<p>Strong security begins with architectural clarity — not product selection.</p>
+	</section>
+
+	<section>
+		<h2>Current Focus</h2>
+		<ul>
+			<li>Enterprise IAM architecture</li>
+			<li>Access governance transformation</li>
+			<li>Zero Trust implementation strategy</li>
+			<li>Identity automation initiatives</li>
+			<li>Digital identity and decentralized trust systems</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Writing</h2>
+		<p>Essays and technical notes are published under the writings section as this portfolio evolves.</p>
+		<p><a href="/projects">See project architecture details</a> and <a href="/about">read more about my systems approach</a>.</p>
+	</section>
+
+	<section>
+		<h2>Contact</h2>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noreferrer">Your LinkedIn URL</a></p>
+		<p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">Your GitHub URL</a></p>
+		<p>Email: <a href="mailto:your.email@example.com">Your Professional Email</a></p>
+	</section>
+</BaseLayout>
