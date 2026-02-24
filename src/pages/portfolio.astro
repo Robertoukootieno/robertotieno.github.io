@@ -14,7 +14,7 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 				I design systems where identity, governance, and operational security work as a unified trust infrastructure. My focus is not only enforcing access decisions, but engineering environments where those decisions are measurable, auditable, and resilient at enterprise scale.
 			</p>
 			<p class="strong-text">The goal: security that scales with organizational complexity, not against it.</p>
-			<p><a href={`${basePath}about/`} style="color: #1e3a8a; font-weight: 600; text-decoration: none;">→ Learn My Approach</a></p>
+			<a href={`${basePath}about/`} class="approach-btn">Learn My Approach</a>
 		</div>
 	</section>
 
@@ -293,6 +293,27 @@ const basePath = baseUrl.endsWith('/') ? baseUrl : `${baseUrl}/`;
 
 	.philosophy-content a:hover {
 		text-decoration: underline;
+	}
+
+	.approach-btn {
+		display: inline-block;
+		padding: 0.7rem 1.4rem;
+		margin-top: 1.2rem;
+		background: #1e3a8a;
+		color: #ffffff;
+		border: none;
+		border-radius: 8px;
+		font-weight: 600;
+		font-size: 0.95rem;
+		text-decoration: none;
+		transition: all 0.3s ease;
+		box-shadow: 0 2px 8px rgba(30, 58, 138, 0.15);
+	}
+
+	.approach-btn:hover {
+		background: #1e3a8a;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 16px rgba(30, 58, 138, 0.25);
 	}
 
 	.expertise-section h2 {
